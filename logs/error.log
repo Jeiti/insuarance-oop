@@ -1,0 +1,38 @@
+[Sat May 07 07:56:29.680543 2016] [:error] [pid 3844] [client 127.0.0.1:38719] PHP Fatal error:  Class 'Controller' not found in /home/evgen/www/insuarance_oop/index.php on line 2
+[Sat May 07 07:58:04.331358 2016] [:error] [pid 3839] [client 127.0.0.1:38919] PHP Fatal error:  Class 'Controller' not found in /home/evgen/www/insuarance_oop/index.php on line 3
+[Wed May 11 09:36:16.346875 2016] [:error] [pid 2006] [client 127.0.0.1:52641] script '/home/evgen/www/insuarance_oop/logout.php' not found or unable to stat, referer: http://insuarance_oop.loc/index.php
+[Sun May 15 07:21:18.416546 2016] [:error] [pid 3667] [client 127.0.0.1:48344] script '/home/evgen/www/insuarance_oop/news.php' not found or unable to stat, referer: http://insuarance_oop.loc/
+[Sun May 15 07:21:18.456659 2016] [:error] [pid 3667] [client 127.0.0.1:48344] script '/home/evgen/www/insuarance_oop/pagination.php' not found or unable to stat, referer: http://insuarance_oop.loc/
+[Sun May 15 07:21:24.954010 2016] [:error] [pid 3666] [client 127.0.0.1:48367] script '/home/evgen/www/insuarance_oop/logout.php' not found or unable to stat, referer: http://insuarance_oop.loc/
+[Sun May 15 07:31:04.427812 2016] [:error] [pid 3960] [client 127.0.0.1:49545] script '/home/evgen/www/insuarance_oop/news.php' not found or unable to stat, referer: http://insuarance_oop.loc/
+[Sun May 15 07:31:04.438850 2016] [:error] [pid 3960] [client 127.0.0.1:49545] script '/home/evgen/www/insuarance_oop/pagination.php' not found or unable to stat, referer: http://insuarance_oop.loc/
+[Sun May 15 07:31:08.948015 2016] [:error] [pid 3960] [client 127.0.0.1:49545] script '/home/evgen/www/insuarance_oop/logout.php' not found or unable to stat, referer: http://insuarance_oop.loc/
+[Sun May 15 07:31:40.374778 2016] [:error] [pid 3802] [client 127.0.0.1:49623] script '/home/evgen/www/insuarance_oop/news.php' not found or unable to stat, referer: http://insuarance_oop.loc/index.php?action=index
+[Sun May 15 07:31:40.381409 2016] [:error] [pid 3802] [client 127.0.0.1:49623] script '/home/evgen/www/insuarance_oop/pagination.php' not found or unable to stat, referer: http://insuarance_oop.loc/index.php?action=index
+[Sun May 15 07:51:06.395856 2016] [:error] [pid 3665] [client 127.0.0.1:51994] PHP Fatal error:  Call to undefined function display_startup_errors() in /home/evgen/www/insuarance_oop/index.php on line 3
+[Sun May 15 08:03:35.402790 2016] [:error] [pid 3664] [client 127.0.0.1:53549] PHP Notice:  iconv(): Detected an illegal character in input string in /home/evgen/www/insuarance_oop/Model.php on line 31
+[Sun May 15 08:03:35.402977 2016] [:error] [pid 3664] [client 127.0.0.1:53549] PHP Notice:  iconv(): Detected an illegal character in input string in /home/evgen/www/insuarance_oop/Model.php on line 31
+[Sun May 15 08:03:35.403025 2016] [:error] [pid 3664] [client 127.0.0.1:53549] PHP Notice:  iconv(): Detected an illegal character in input string in /home/evgen/www/insuarance_oop/Model.php on line 31
+[Sun May 15 08:03:35.403070 2016] [:error] [pid 3664] [client 127.0.0.1:53549] PHP Notice:  iconv(): Detected an illegal character in input string in /home/evgen/www/insuarance_oop/Model.php on line 31
+[Sun May 15 08:03:35.403114 2016] [:error] [pid 3664] [client 127.0.0.1:53549] PHP Notice:  iconv(): Detected an illegal character in input string in /home/evgen/www/insuarance_oop/Model.php on line 31
+[Sun May 15 08:03:35.403157 2016] [:error] [pid 3664] [client 127.0.0.1:53549] PHP Notice:  iconv(): Detected an illegal character in input string in /home/evgen/www/insuarance_oop/Model.php on line 31
+[Sun May 15 08:03:35.403200 2016] [:error] [pid 3664] [client 127.0.0.1:53549] PHP Notice:  iconv(): Detected an illegal character in input string in /home/evgen/www/insuarance_oop/Model.php on line 31
+[Sun May 15 08:03:36.459308 2016] [:error] [pid 3664] [client 127.0.0.1:53549] script '/home/evgen/www/insuarance_oop/news.php' not found or unable to stat, referer: http://insuarance_oop.loc/
+[Sun May 15 08:03:36.468550 2016] [:error] [pid 3664] [client 127.0.0.1:53549] script '/home/evgen/www/insuarance_oop/pagination.php' not found or unable to stat, referer: http://insuarance_oop.loc/
+[Sun May 15 08:04:22.388105 2016] [:error] [pid 3958] [client 127.0.0.1:53647] script '/home/evgen/www/insuarance_oop/page_news.php' not found or unable to stat, referer: http://insuarance_oop.loc/
+[Sun May 15 08:07:00.110244 2016] [:error] [pid 3668] [client 127.0.0.1:53970] script '/home/evgen/www/insuarance_oop/page_news.php' not found or unable to stat, referer: http://insuarance_oop.loc/
+[Sun May 15 08:07:21.696900 2016] [:error] [pid 3664] [client 127.0.0.1:54022] script '/home/evgen/www/insuarance_oop/news.php' not found or unable to stat, referer: http://insuarance_oop.loc/
+[Sun May 15 08:07:21.703970 2016] [:error] [pid 3664] [client 127.0.0.1:54022] script '/home/evgen/www/insuarance_oop/pagination.php' not found or unable to stat, referer: http://insuarance_oop.loc/
+[Sun May 15 08:07:49.184157 2016] [:error] [pid 3668] [client 127.0.0.1:54083] PHP Notice:  iconv(): Detected an illegal character in input string in /home/evgen/www/insuarance_oop/Model.php on line 32
+[Sun May 15 08:07:49.184354 2016] [:error] [pid 3668] [client 127.0.0.1:54083] PHP Notice:  iconv(): Detected an illegal character in input string in /home/evgen/www/insuarance_oop/Model.php on line 32
+[Sun May 15 08:07:49.184402 2016] [:error] [pid 3668] [client 127.0.0.1:54083] PHP Notice:  iconv(): Detected an illegal character in input string in /home/evgen/www/insuarance_oop/Model.php on line 32
+[Sun May 15 08:07:49.184448 2016] [:error] [pid 3668] [client 127.0.0.1:54083] PHP Notice:  iconv(): Detected an illegal character in input string in /home/evgen/www/insuarance_oop/Model.php on line 32
+[Sun May 15 08:07:49.184491 2016] [:error] [pid 3668] [client 127.0.0.1:54083] PHP Notice:  iconv(): Detected an illegal character in input string in /home/evgen/www/insuarance_oop/Model.php on line 32
+[Sun May 15 08:07:49.184534 2016] [:error] [pid 3668] [client 127.0.0.1:54083] PHP Notice:  iconv(): Detected an illegal character in input string in /home/evgen/www/insuarance_oop/Model.php on line 32
+[Sun May 15 08:07:49.184578 2016] [:error] [pid 3668] [client 127.0.0.1:54083] PHP Notice:  iconv(): Detected an illegal character in input string in /home/evgen/www/insuarance_oop/Model.php on line 32
+[Sun May 15 08:07:50.163735 2016] [:error] [pid 3668] [client 127.0.0.1:54083] script '/home/evgen/www/insuarance_oop/news.php' not found or unable to stat, referer: http://insuarance_oop.loc/
+[Sun May 15 08:07:50.172005 2016] [:error] [pid 3668] [client 127.0.0.1:54083] script '/home/evgen/www/insuarance_oop/pagination.php' not found or unable to stat, referer: http://insuarance_oop.loc/
+[Sun May 15 08:23:39.745177 2016] [:error] [pid 3960] [client 127.0.0.1:56011] script '/home/evgen/www/insuarance_oop/news.php' not found or unable to stat, referer: http://insuarance_oop.loc/
+[Sun May 15 08:23:39.758822 2016] [:error] [pid 3960] [client 127.0.0.1:56011] script '/home/evgen/www/insuarance_oop/pagination.php' not found or unable to stat, referer: http://insuarance_oop.loc/
+[Sun May 15 08:24:45.781791 2016] [:error] [pid 3800] [client 127.0.0.1:56149] script '/home/evgen/www/insuarance_oop/news.php' not found or unable to stat, referer: http://insuarance_oop.loc/
+[Sun May 15 08:24:45.786896 2016] [:error] [pid 3800] [client 127.0.0.1:56149] script '/home/evgen/www/insuarance_oop/pagination.php' not found or unable to stat, referer: http://insuarance_oop.loc/
