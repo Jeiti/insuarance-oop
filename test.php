@@ -6,7 +6,7 @@ ini_set('display_startup_errors', 1);
 /*включить отображение ошибок*/
 
 require ("config.inc");
-$controller = new Controller();
+$controller = new TestController();
 /*реализация маршрутизации*/
 $action=(isset($_GET['action']))?$_GET['action']:"index";
 switch ($action){
@@ -19,3 +19,4 @@ switch ($action){
     default:
         $controller->actionIndex();
 }
+//TODO:Полная связка - article.php, создать для неё контроллер, модель, таблицу и представление. Т.е. выводить на экран список всех статей из БД

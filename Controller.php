@@ -1,8 +1,5 @@
 <?php
 
-require_once ("View.php");
-require_once ("Model.php");
-
 class Controller
 {
     private $view;

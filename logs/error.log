@@ -36,3 +36,8 @@
 [Sun May 15 08:23:39.758822 2016] [:error] [pid 3960] [client 127.0.0.1:56011] script '/home/evgen/www/insuarance_oop/pagination.php' not found or unable to stat, referer: http://insuarance_oop.loc/
 [Sun May 15 08:24:45.781791 2016] [:error] [pid 3800] [client 127.0.0.1:56149] script '/home/evgen/www/insuarance_oop/news.php' not found or unable to stat, referer: http://insuarance_oop.loc/
 [Sun May 15 08:24:45.786896 2016] [:error] [pid 3800] [client 127.0.0.1:56149] script '/home/evgen/www/insuarance_oop/pagination.php' not found or unable to stat, referer: http://insuarance_oop.loc/
+[Tue Jun 14 08:20:39.319840 2016] [:error] [pid 6048] [client 127.0.0.1:54326] PHP Fatal error:  Class 'TestView' not found in /home/evgen/www/insuarance_oop/TestController.php on line 8
+[Tue Jun 14 08:29:17.045374 2016] [:error] [pid 6044] [client 127.0.0.1:54340] PHP Warning:  Missing argument 1 for TestView::showLayout(), called in /home/evgen/www/insuarance_oop/TestController.php on line 14 and defined in /home/evgen/www/insuarance_oop/TestView.php on line 5
+[Tue Jun 14 08:29:17.045488 2016] [:error] [pid 6044] [client 127.0.0.1:54340] PHP Notice:  Undefined variable: _data in /home/evgen/www/insuarance_oop/TestView.php on line 7
+[Tue Jun 14 08:31:04.934427 2016] [:error] [pid 6047] [client 127.0.0.1:54351] script '/home/evgen/www/insuarance_oop/news.php' not found or unable to stat, referer: http://insuarance_oop.loc/
+[Tue Jun 14 08:31:04.945394 2016] [:error] [pid 6047] [client 127.0.0.1:54351] script '/home/evgen/www/insuarance_oop/pagination.php' not found or unable to stat, referer: http://insuarance_oop.loc/
