@@ -1,18 +1,27 @@
 <?php
 header("Content-type:text/html; charset=utf-8");
 require_once ("config.inc");
-$link = mysqli_connect(DBHOSTNAME,DBUSER,DBPASSWORD,DBBDNAME);
 
-if(!$link){
+$controller = new NewsController();
+
+$action = (isset($_GET['action'])?$_GET['action']:"index");
+
+switch ($action){
+    case "show":
+        $controller->actionShow();
+}
+
+
+/*if(!$link){
     echo mysqli_error($link);
 }
 else{
-    $res = mysqli_query($link, "select  title, content, picture, date_time from news where id= " . $_GET['new']);
+    
     if(!$res){
         echo mysqli_error($link);
     }
     else{
-        $row=mysqli_fetch_array($res);
+        
         echo "
         <div class=\"container-fluid\">
             <div class=\"row\">
@@ -29,4 +38,4 @@ else{
     }
 }
 
-require_once ("footer.php");
+require_once ("footer.php");*/

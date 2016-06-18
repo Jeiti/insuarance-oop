@@ -1,13 +1,14 @@
 <?php
 
-class View{
+class NewsView
+{
     function showLayout($data=[]){
         $this->showHeader();
         $this->showContent($data);
         $this->showFooter();
     }
 
-    function showHeader(){
+    private function showHeader(){
         echo '<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -91,7 +92,7 @@ class View{
     </div>
 ';
     }
-    function showFooter(){
+    private function showFooter(){
         echo '
         <footer>
         <hr>
@@ -108,88 +109,9 @@ class View{
         </body>
         </html>';
     }
-    function showContent($data=[]){
-        echo '<div class="row">
-    <div class="col-sm-8">
-        <div class="jumbotron" contenteditable="true">
-            <h2>Hello, world!</h2>
-            <p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-            <p><a class="btn btn-primary btn-large" href="#">Learn more</a></p>
-        </div>
-    </div>
-    <div class="col-sm-4">
-        <div class="row">
-            <div class="media">
-                <a href="#" class="pull-left">
-                    <img alt="Bootstrap Media Preview" src="http://lorempixel.com/64/64/" class="media-object">
-                </a>
-                <div class="media-body" contenteditable="true">
-                    <h4 class="media-heading">Nested media heading</h4>
-                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
-                </div>
-            </div>
-        </div>
-        <hr>
-        <div class="row">
-            <div class="media">
-                <a href="#" class="pull-left">
-                    <img alt="Bootstrap Media Preview" src="http://lorempixel.com/64/64/" class="media-object">
-                </a>
-                <div class="media-body" contenteditable="true">
-                    <h4 class="media-heading">Nested media heading</h4>
-                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
-                </div>
-            </div>
-        </div>
-        <hr>
-        <div class="row">
-            <div class="media">
-                <a href="#" class="pull-left">
-                    <img alt="Bootstrap Media Preview" src="http://lorempixel.com/64/64/" class="media-object">
-                </a>
-                <div class="media-body" contenteditable="true">
-                    <h4 class="media-heading">Nested media heading</h4>
-                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!---------------==================================================================================================================----------------------------------------->
-<hr>
-<!---------------==================================================================================================================----------------------------------------->
-';
-        $this->showNews($data);
+    private function showContent($data){
+        print_r($data);
     }
-    private function showNews($data=[]){
-
-        $i=0;
-
-        foreach($data as $news){
-            if ($i % 3)
-                echo "<div class=\"row\">";
-            echo "<div class=\"col-md-4\">
-                <div class=\"thumbnail\">
-                <img class=\"img-rounded\" src=\"img/news_img/$news[picture]\">
-                <h3>$news[title]</h3>
-                <p>$news[content]</p>
-                <p>
-                <a class=\"btn btn-primary\" href=\"/news.php?action=show&id=$news[id]\">Подробнее</a>
-
-                </p>
-
-                </div>
-
-            </div>";
-
-            if(($i % 3) == 2)
-
-                echo "</div>";
-
-            $i++;
-
-        }
-
-    }
-
 }
+
+//TODO: доделать верстку вывода новости
