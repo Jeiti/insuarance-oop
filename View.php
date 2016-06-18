@@ -6,6 +6,7 @@ class View{
         $this->showContent($data);
         $this->showFooter();
     }
+
     function showHeader(){
         echo '<!DOCTYPE html>
 <html lang="en">
@@ -107,11 +108,6 @@ class View{
         </body>
         </html>';
     }
-
-
-
-
-
     function showContent($data=[]){
         echo '<div class="row">
     <div class="col-sm-8">
@@ -170,19 +166,16 @@ class View{
         foreach($data as $news){
             if ($i % 3)
                 echo "<div class=\"row\">";
-            echo "<div class=\"col-md-4\">
-                <div class=\"thumbnail\">
-                <img class=\"img-rounded\" src=\"img/news_img/1.jpeg\">
-                <h3>$news[title]</h3>
-                <p>С другой стороны рамки и место обучения кадров в значительной степени обуславливает создание существенных финансовых и административных условий. Товарищи! постоянный количественный рост и сфера нашей активности играет важную роль в формировании дальнейших направлений развития. Повседневная практика показывает, что постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения существенных финансовых и административных условий. Не следует, однако забывать, что укрепление и развитие структуры требуют от нас анализа существенных финансовых и административных условий. </p>
-                <p>
-                <a class=\"btn btn-primary\" href=\"/page_news.php?new=21\">Подробнее</a>
-                </p>
-                </div>
-            </div>";
-            if(($i % 3) == 2)
+                    echo "<div class=\"col-md-4\">
+                    <div class=\"thumbnail\">
+                        <img class=\"img-rounded\" src=\"img/news_img/$news[picture]\">
+                        <h3>$news[title]</h3>
+                        <p>$news[content]</p>
+                        <p><a class=\"btn btn-primary\" href=\"/page_news.php?new=$news[id]\">Подробнее</a></p>
+                    </div>
+                </div>";
+                if(($i % 3) == 2)
                 echo "</div>";
-
             $i++;
         }
     }

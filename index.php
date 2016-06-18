@@ -6,6 +6,7 @@ ini_set('display_startup_errors', 1);
 /*включить отображение ошибок*/
 
 require ("config.inc");
+
 $controller = new Controller();
 /*реализация маршрутизации*/
 $action=(isset($_GET['action']))?$_GET['action']:"index";

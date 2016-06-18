@@ -25,7 +25,7 @@ class Model
                 //--------------конец определения переменных --------------/
                 if (strlen($content)>120){//если длина строки больше 120 символов, тогда
                     $content = substr($content,0,120);//обрезать строку до 120 символов
-                    $content=$content."...";
+                    $content.="...";
                 }
                 $array[] = ['title'=>   iconv(mb_detect_encoding($title), "UTF-8", $title),//iconv - функция для изменения кодировки передаваемого текста
                     //todo:Notice: iconv(): Detected an illegal character in input string in /home/evgen/www/insuarance_oop/Model.php on line 31

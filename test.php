@@ -1,14 +1,20 @@
 <?php
-/*включить отображение ошибок*/
+//включить отображение ошибок
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
-/*включить отображение ошибок*/
+//конец включить отображение ошибок
 
+//подключение autoload
 require ("config.inc");
-$controller = new TestController();
-/*реализация маршрутизации*/
-$action=(isset($_GET['action']))?$_GET['action']:"index";
+//конец подключение autoload
+
+$controller = new TestController(); //создается новый экземпляр класса TestController() в котором
+//подключается TestView() и TestModel() автоматически
+
+//реализация маршрутизации
+$action=(isset($_GET['action']))?$_GET['action']:"index";//получаем - какую страницу выбрал пользователь
+
 switch ($action){
     case "index":
         $controller->actionIndex();
@@ -19,4 +25,5 @@ switch ($action){
     default:
         $controller->actionIndex();
 }
-//TODO:Полная связка - article.php, создать для неё контроллер, модель, таблицу и представление. Т.е. выводить на экран список всех статей из БД
+//TODO:Полная связка - article.php, создать для неё контроллер, модель, таблицу и представление.
+//TODO:Т.е. выводить на экран список всех статей из БД
