@@ -1,12 +1,9 @@
 <?php
 
-require_once ("View.php");
-require_once ("Model.php");
-
 class Controller
 {
-    private $view;
-    private $model;
+    protected $view;
+    protected $model;
 
     function __construct()
     {
@@ -18,8 +15,14 @@ class Controller
         $array = $this->model->all();
         $this->view->showLayout($array);
     }
-
+    
+    public function actionShow(){
+        $data = $this->model->find($_GET['id']);
+        $this->view->showLayout($data);
+    }
+    
     public function actionNew(){
-        echo "new";
+        //$data = $this->model->create($_POST["hotnews"]);
+        $this->view->showNewForm()  ;
     }
 }

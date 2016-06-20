@@ -2,6 +2,7 @@
 require_once ("config.inc");
 class Model
 {
+    protected $link;
     public function __construct() {
         $this->link = mysqli_connect(DBHOSTNAME, DBUSER, DBPASSWORD, DBBDNAME);
     }
@@ -25,10 +26,9 @@ class Model
                 //--------------конец определения переменных --------------/
                 if (strlen($content)>120){//если длина строки больше 120 символов, тогда
                     $content = substr($content,0,120);//обрезать строку до 120 символов
-                    $content=$content."...";
+                    $content.="...";
                 }
                 $array[] = ['title'=>   iconv(mb_detect_encoding($title), "UTF-8", $title),//iconv - функция для изменения кодировки передаваемого текста
-                    //todo:Notice: iconv(): Detected an illegal character in input string in /home/evgen/www/insuarance_oop/Model.php on line 31
                     'content'=> @iconv(mb_detect_encoding($content), "UTF-8", $content),//iconv - функция для изменения кодировки передаваемого текста
                     'id'=>      $id,
                     'picture'=> $picture
@@ -36,5 +36,15 @@ class Model
             }
         }
         return $array;
+    }
+
+    public function find($id){
+        $res = mysqli_query($this->link, "select  title, content, picture, date_time from news where id=$id");
+        $row=mysqli_fetch_array($res);
+        return $row;
+    }
+
+    public function create($data){
+        $res = mysqli_query($this->link, "INSERT INTO news (title, content, picture, date_time) VALUES ($data[title], $data[content], $data[picture], date('y.m.d H:i'))");
     }
 }

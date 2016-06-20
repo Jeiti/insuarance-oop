@@ -5,7 +5,8 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 /*включить отображение ошибок*/
 
-require ("Controller.php");
+require ("config.inc");
+
 $controller = new Controller();
 /*реализация маршрутизации*/
 $action=(isset($_GET['action']))?$_GET['action']:"index";

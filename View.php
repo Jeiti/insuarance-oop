@@ -6,7 +6,8 @@ class View{
         $this->showContent($data);
         $this->showFooter();
     }
-    function showHeader(){
+
+    protected function showHeader(){
         echo '<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -90,7 +91,7 @@ class View{
     </div>
 ';
     }
-    function showFooter(){
+    protected function showFooter(){
         echo '
         <footer>
         <hr>
@@ -107,12 +108,7 @@ class View{
         </body>
         </html>';
     }
-
-
-
-
-
-    function showContent($data=[]){
+    protected function showContent($data=[]){
         echo '<div class="row">
     <div class="col-sm-8">
         <div class="jumbotron" contenteditable="true">
@@ -166,24 +162,52 @@ class View{
         $this->showNews($data);
     }
     private function showNews($data=[]){
+
         $i=0;
+
         foreach($data as $news){
             if ($i % 3)
                 echo "<div class=\"row\">";
             echo "<div class=\"col-md-4\">
                 <div class=\"thumbnail\">
-                <img class=\"img-rounded\" src=\"img/news_img/1.jpeg\">
+                <img class=\"img-rounded\" src=\"img/news_img/$news[picture]\">
                 <h3>$news[title]</h3>
-                <p>С другой стороны рамки и место обучения кадров в значительной степени обуславливает создание существенных финансовых и административных условий. Товарищи! постоянный количественный рост и сфера нашей активности играет важную роль в формировании дальнейших направлений развития. Повседневная практика показывает, что постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения существенных финансовых и административных условий. Не следует, однако забывать, что укрепление и развитие структуры требуют от нас анализа существенных финансовых и административных условий. </p>
+                <p>$news[content]</p>
                 <p>
-                <a class=\"btn btn-primary\" href=\"/page_news.php?new=21\">Подробнее</a>
+                <a class=\"btn btn-primary\" href=\"/news.php?action=show&id=$news[id]\">Подробнее</a>
+
                 </p>
+
                 </div>
+
             </div>";
+
             if(($i % 3) == 2)
+
                 echo "</div>";
 
             $i++;
+
         }
+
     }
+    
+    public function showNewForm(){
+        echo "
+        <form action='new_add.php' method='POST' enctype='multipart/form-data'>
+            <label for='title'>Название новости</label>
+            <input id='title' placeholder='введите название новости' type='text' name='title'>
+            
+            <label for='content'>Новость</label>
+            <textarea id='content' placeholder='введите текст новости' type='text' name='content'></textarea>
+            
+            <label for='inputfile'>Выберите файл для загрузки</label>
+            <input id='inputfile' type='file' name='picture'>
+            
+            <button type='submit' name='hotnews'>Загрузить новость</button>
+        </form>
+        ";
+        //TODO: подумать как добавить оформление сайта (сделать нормальный вызов showheader showfooter)
+    }
+
 }
