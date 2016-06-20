@@ -205,7 +205,7 @@ class View{
             <label for='inputfile'>Выберите файл для загрузки</label>
             <input id='inputfile' type='file' name='picture'>
             
-            <button type='submit' name='hotnews'>Загрузить новость</button>
+            <button type='submit' name='create'>Загрузить новость</button>
         </form>
         ";
         //TODO: подумать как добавить оформление сайта (сделать нормальный вызов showheader showfooter)

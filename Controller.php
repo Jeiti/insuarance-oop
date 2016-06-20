@@ -25,12 +25,11 @@ class Controller
         $this->view->showNewForm()  ;
     }
     public function actionCreate(){
-/*        if($this->model->create($_POST["hotnews"])){
+        if($this->model->create($_GET)){
             echo "OK";
         }
         else{
-            echo "FAIL";
-        }*/
-        print_r($_GET);
+            echo $this->model->error();
+        }
     }
 }
