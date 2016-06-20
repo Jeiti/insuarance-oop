@@ -7,10 +7,13 @@ $controller = new NewsController();
 $action = (isset($_GET['action'])?$_GET['action']:"index");
 
 switch ($action){
-    case "show":
+    case 'show':
         $controller->actionShow();
         break;
     case 'new':
         $controller->actionNew();
+        break;
+    case 'create':
+        $controller->actionCreate();
         break;
 }

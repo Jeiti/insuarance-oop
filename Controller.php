@@ -22,7 +22,15 @@ class Controller
     }
     
     public function actionNew(){
-        //$data = $this->model->create($_POST["hotnews"]);
         $this->view->showNewForm()  ;
+    }
+    public function actionCreate(){
+/*        if($this->model->create($_POST["hotnews"])){
+            echo "OK";
+        }
+        else{
+            echo "FAIL";
+        }*/
+        print_r($_GET);
     }
 }

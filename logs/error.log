@@ -166,3 +166,4 @@
 [Mon Jun 20 08:22:18.807223 2016] [:error] [pid 4901] [client 127.0.0.1:51175] PHP Notice:  Undefined index: date_time in /home/evgen/www/insuarance_oop/NewsView.php on line 13
 [Mon Jun 20 08:22:18.807232 2016] [:error] [pid 4901] [client 127.0.0.1:51175] PHP Notice:  Undefined index: title in /home/evgen/www/insuarance_oop/NewsView.php on line 14
 [Mon Jun 20 08:22:18.807239 2016] [:error] [pid 4901] [client 127.0.0.1:51175] PHP Notice:  Undefined index: content in /home/evgen/www/insuarance_oop/NewsView.php on line 15
+[Mon Jun 20 08:46:09.472794 2016] [:error] [pid 7738] [client 127.0.0.1:51223] script '/home/evgen/www/insuarance_oop/new_add.php' not found or unable to stat, referer: http://insuarance_oop.loc/news.php?action=new
