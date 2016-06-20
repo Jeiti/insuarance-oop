@@ -11,17 +11,17 @@ switch ($action){
         $controller->actionShow();
 }
 
-
+//TODO: реализовать создание новости (вывести форму new_add без добавления в БД)
 /*if(!$link){
     echo mysqli_error($link);
 }
 else{
-    
+
     if(!$res){
         echo mysqli_error($link);
     }
     else{
-        
+
         echo "
         <div class=\"container-fluid\">
             <div class=\"row\">

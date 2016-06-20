@@ -2,8 +2,8 @@
 
 class Controller
 {
-    private $view;
-    private $model;
+    protected $view;
+    protected $model;
 
     function __construct()
     {
@@ -18,5 +18,10 @@ class Controller
 
     public function actionNew(){
         echo "new";
+    }
+    
+    public function actionShow(){
+        $data = $this->model->find($_GET['id']);
+        $this->view->showLayout($data);
     }
 }

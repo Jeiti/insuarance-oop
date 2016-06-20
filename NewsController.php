@@ -1,18 +1,9 @@
 <?php
 
-class NewsController
-{
-    private $model;
-    private $view;
+class NewsController extends Controller{
 
-    public function __construct()
-    {
-        $this->model = new NewsModel();
-        $this->view = new NewsView();
-    }
-    
-    public function actionShow(){
-        $data = $this->model->find($_GET['id']);
-        $this->view->showLayout($data);
+    function __construct(){
+        $this->view=new NewsView();
+        $this->model=new NewsModel();
     }
 }

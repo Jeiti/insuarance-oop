@@ -2,6 +2,7 @@
 require_once ("config.inc");
 class Model
 {
+    protected $link;
     public function __construct() {
         $this->link = mysqli_connect(DBHOSTNAME, DBUSER, DBPASSWORD, DBBDNAME);
     }
@@ -36,5 +37,11 @@ class Model
             }
         }
         return $array;
+    }
+
+    public function find($id){
+        $res = mysqli_query($this->link, "select  title, content, picture, date_time from news where id=$id");
+        $row=mysqli_fetch_array($res);
+        return $row;
     }
 }
