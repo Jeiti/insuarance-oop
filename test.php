@@ -19,9 +19,9 @@ switch ($action){
     case "index":
         $controller->actionIndex();
         break;
-    case "new":
+/*    case "new":
         $controller->actionNew();
         break;
     default:
-        $controller->actionIndex();
+        $controller->actionIndex();*/
 }

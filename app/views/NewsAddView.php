@@ -4,7 +4,7 @@ class NewsAddView extends View
 {
     public function showContent($data=[]){
         echo "
-        <form action='news.php' method='POST' enctype='multipart/form-data'>
+        <form action='../../news.php' method='POST' enctype='multipart/form-data'>
             <input type='hidden' name='action' value='create'>
             <label for='title'>Название новости</label>
             <input id='title' placeholder='введите название новости' type='text' name='title'>

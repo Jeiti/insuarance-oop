@@ -224,3 +224,4 @@
 [Thu Jun 23 09:59:40.423296 2016] [:error] [pid 1623] [client 127.0.0.1:34175] PHP Notice:  Undefined index: picture in /home/evgen/www/insuarance_oop/Model.php on line 48, referer: http://insuarance_oop.loc/news.php?action=new
 [Thu Jun 23 10:04:41.256136 2016] [:error] [pid 2870] [client 127.0.0.1:34179] PHP Notice:  Undefined index: picture in /home/evgen/www/insuarance_oop/Model.php on line 48, referer: http://insuarance_oop.loc/news.php?action=new
 [Thu Jun 23 10:06:43.498077 2016] [:error] [pid 6275] [client 127.0.0.1:34183] PHP Notice:  Array to string conversion in /home/evgen/www/insuarance_oop/Model.php on line 48, referer: http://insuarance_oop.loc/news.php?action=new
+[Thu Jun 23 10:48:23.838213 2016] [:error] [pid 5702] [client 127.0.0.1:34288] PHP Fatal error:  Class 'TestView' not found in /home/evgen/www/insuarance_oop/app/controllers/TestController.php on line 10

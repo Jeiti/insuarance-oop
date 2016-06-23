@@ -14,8 +14,8 @@ class View{
     <meta charset="utf-8">
     <title>Insuarance-oz</title>
     <meta name="author" content="Insuarance-oz">
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -35,7 +35,7 @@ class View{
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.php" id="ontop">Insuarance-oz</a>
+                    <a class="navbar-brand" href="../index.php" id="ontop">Insuarance-oz</a>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
@@ -101,9 +101,9 @@ class View{
             Наверх
         </a>
         </div>
-        <script src="js/jquery.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/scripts.js"></script>
+        <script src="../js/jquery.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/scripts.js"></script>
         
         </body>
         </html>';

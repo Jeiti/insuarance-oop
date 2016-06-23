@@ -17,10 +17,26 @@ else{
     define("ERROR_LEVEL", E_ALL & ~E_NOTICE);
 }
 
-
-
-
-
-function __autoload($_classname){
+/*function __autoload($_classname){
     require_once ($_classname . ".php");
+}*/
+
+function frameworkAutoload($className)
+{
+    $fileName = $_SERVER['DOCUMENT_ROOT']."/framework/$className.php";
+    if (file_exists($fileName)) {
+        require_once ($fileName);
+    }
 }
+spl_autoload_register('frameworkAutoload');
+
+function controllersAutoload($className)
+{
+    $fileName = $_SERVER['DOCUMENT_ROOT']."/app/controllers/$className.php";
+    if (file_exists($fileName)) {
+        require_once ($fileName);
+    }
+}
+spl_autoload_register('controllersAutoload');
+
+//TODO: Доделать подключение остальных папок
