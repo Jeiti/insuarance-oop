@@ -2,7 +2,7 @@
 
 class NewsView extends View
 {
-    function showContent($data){
+    function showContent($data=[]){
         echo "
         <div class=\"container-fluid\">
             <div class=\"row\">

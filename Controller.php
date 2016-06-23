@@ -1,6 +1,6 @@
 <?php
 
-set_error_handler('Controller::handlerException',ERROR_LEVEL);
+//set_error_handler('Controller::handlerException',ERROR_LEVEL);
 
 class Controller
 {
@@ -33,7 +33,7 @@ class Controller
 
     public function actionCreate(){
         try{
-            $this->model->create($_GET);
+            $this->model->create(array_merge($_POST,$_FILES['picture']));//TODO: заменить на $params (в скобках)
             echo "OK";
 
         }

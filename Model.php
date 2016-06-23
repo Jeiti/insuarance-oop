@@ -45,7 +45,7 @@ class Model
     }
 
     public function create($data){
-        $res = mysqli_query($this->link, "INSERT INTO news (title, content, picture, date_time) VALUES ('$data[title]', '$data[content]', '$data[picture]', '" . date('y.m.d H:i') . "')");
+        $res = mysqli_query($this->link, "INSERT INTO news (title, content, picture, date_time) VALUES ('$data[title]', '$data[content]', '$data[name]', '" . date('y.m.d H:i') . "')");
         if (!$res){
             throw new SqlException($this->error());
         }
