@@ -20,3 +20,5 @@ switch ($action){
         break;
 }
 //TODO: сделать класс WebApplication в котором реализовать $params как свойство статическое или экземпляра класса
+//TODO: сделать классы Controller Model View абстрактными
+//TODO: реализация обратной связи

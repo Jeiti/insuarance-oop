@@ -1,6 +1,6 @@
 <?php
 
-//set_error_handler('Controller::handlerException',ERROR_LEVEL);
+set_error_handler('Controller::handlerException',ERROR_LEVEL);
 
 class Controller
 {
@@ -28,7 +28,7 @@ class Controller
     }
     
     public function actionNew(){
-        $this->view->showNewForm()  ;
+        $this->view->showLayout()  ;
     }
 
     public function actionCreate(){
