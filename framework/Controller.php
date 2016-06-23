@@ -4,6 +4,7 @@ set_error_handler('Controller::handlerException',ERROR_LEVEL);
 
 class Controller
 {
+    use ControllerTrait;
     protected $view;
     protected $model;
 

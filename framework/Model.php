@@ -2,13 +2,14 @@
 require_once("config.inc");
 class Model
 {
+    use ModelTrait;
     protected $link;
     public function __construct() {
         $this->link = mysqli_connect(DBHOSTNAME, DBUSER, DBPASSWORD, DBBDNAME);
     }
-/*    public function __destruct() {
+    public function __destruct() {
         mysqli_close($this->link);
-    }*/
+    }
 
     public function all() {
         $res=mysqli_query($this->link,"select * from news");

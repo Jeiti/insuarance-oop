@@ -2,14 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a9751a31-bbc2-488d-9e36-583566d2f7c0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebApplication.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ControllerTrait.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ModelTrait.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ViewTrait.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.inc" afterPath="$PROJECT_DIR$/config.inc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/NewsController.php" afterPath="$PROJECT_DIR$/app/controllers/NewsController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/Controller.php" afterPath="$PROJECT_DIR$/framework/Controller.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/Model.php" afterPath="$PROJECT_DIR$/framework/Model.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/access.log" afterPath="$PROJECT_DIR$/logs/access.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/error.log" afterPath="$PROJECT_DIR$/logs/error.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/news.php" afterPath="$PROJECT_DIR$/news.php" />
     </list>
     <ignored path="insuarance_oop.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,12 +32,62 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="news.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="news.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/news.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+            <state relative-caret-position="180">
+              <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NewsController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/NewsController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="202">
+              <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WebApplication.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebApplication.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Controller.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/framework/Controller.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+              <folding>
+                <element signature="n#handlerException#0;n#Controller#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Model.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/framework/Model.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="241">
+              <caret line="52" column="38" selection-start-line="52" selection-start-column="38" selection-end-line="52" selection-end-column="38" />
+              <folding>
+                <marker date="1466684598302" expanded="true" signature="355:373" ph="select * fro... news" />
+                <marker date="1466684598302" expanded="true" signature="2094:2156" ph="select title... news" />
+                <marker date="1466684598302" expanded="true" signature="2307:2369" ph="INSERT INTO news... " />
+                <marker date="1466684598302" expanded="true" signature="2307:2417" ph="INSERT INTO news... " />
+                <marker date="1466684598302" expanded="true" signature="2307:2419" ph="INSERT INTO news... " />
+                <marker date="1466684598302" expanded="true" signature="2307:2440" ph="INSERT INTO news... " />
+                <marker date="1466684598302" expanded="true" signature="2307:2446" ph="INSERT INTO news... " />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -49,7 +100,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/NewsModel.php" />
         <option value="$PROJECT_DIR$/NewAddController.php" />
         <option value="$PROJECT_DIR$/NewAddModel.php" />
@@ -67,10 +117,15 @@
         <option value="$PROJECT_DIR$/test.php" />
         <option value="$PROJECT_DIR$/app/controllers/TestController.php" />
         <option value="$PROJECT_DIR$/WebApplication.php" />
-        <option value="$PROJECT_DIR$/framework/Controller.php" />
         <option value="$PROJECT_DIR$/news.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/framework/Controller.php" />
+        <option value="$PROJECT_DIR$/ControllerTrait.php" />
         <option value="$PROJECT_DIR$/framework/Model.php" />
+        <option value="$PROJECT_DIR$/ModelTrait.php" />
+        <option value="$PROJECT_DIR$/ViewTrait.php" />
         <option value="$PROJECT_DIR$/config.inc" />
+        <option value="$PROJECT_DIR$/app/controllers/NewsController.php" />
       </list>
     </option>
   </component>
@@ -291,12 +346,12 @@
       <workItem from="1466596384467" duration="5515000" />
       <workItem from="1466659354347" duration="532000" />
       <workItem from="1466660915966" duration="7661000" />
-      <workItem from="1466676922995" duration="6040000" />
+      <workItem from="1466676922995" duration="7890000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39216000" />
+    <option name="totallyTimeSpent" value="41066000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -346,47 +401,23 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/framework/View.php</url>
-          <line>167</line>
-          <option name="timeStamp" value="16" />
+          <url>file://$PROJECT_DIR$/index.php</url>
+          <line>9</line>
+          <option name="timeStamp" value="21" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="18" />
+      <option name="time" value="22" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/NewsAddView.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
-          <folding>
-            <marker date="1466667667976" expanded="true" signature="179:826" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/news.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InsuaranceException.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="51" selection-start-line="6" selection-start-column="51" selection-end-line="6" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/framework/Controller.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="n#handlerException#0;n#Controller#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -395,14 +426,13 @@
         <state relative-caret-position="405">
           <caret line="31" column="6" selection-start-line="31" selection-start-column="6" selection-end-line="31" selection-end-column="6" />
           <folding>
-            <element signature="n#create#0;n#Model#0;n#!!top" expanded="false" />
-            <marker date="1466683192410" expanded="true" signature="339:357" ph="select * fro... news" />
-            <marker date="1466683192410" expanded="true" signature="2078:2140" ph="select title... news" />
-            <marker date="1466683192410" expanded="true" signature="2291:2353" ph="INSERT INTO news... " />
-            <marker date="1466683192410" expanded="true" signature="2291:2401" ph="INSERT INTO news... " />
-            <marker date="1466683192410" expanded="true" signature="2291:2403" ph="INSERT INTO news... " />
-            <marker date="1466683192410" expanded="true" signature="2291:2424" ph="INSERT INTO news... " />
-            <marker date="1466683192410" expanded="true" signature="2291:2430" ph="INSERT INTO news... " />
+            <marker date="1466684598302" expanded="true" signature="355:373" ph="select * fro... news" />
+            <marker date="1466684598302" expanded="true" signature="2094:2156" ph="select title... news" />
+            <marker date="1466684598302" expanded="true" signature="2307:2369" ph="INSERT INTO news... " />
+            <marker date="1466684598302" expanded="true" signature="2307:2417" ph="INSERT INTO news... " />
+            <marker date="1466684598302" expanded="true" signature="2307:2419" ph="INSERT INTO news... " />
+            <marker date="1466684598302" expanded="true" signature="2307:2440" ph="INSERT INTO news... " />
+            <marker date="1466684598302" expanded="true" signature="2307:2446" ph="INSERT INTO news... " />
           </folding>
         </state>
       </provider>
@@ -419,6 +449,8 @@
         <state relative-caret-position="45">
           <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
           <folding>
+            <element signature="n#showHeader#0;n#View#0;n#!!top" expanded="false" />
+            <element signature="n#showFooter#0;n#View#0;n#!!top" expanded="false" />
             <marker date="1466667618576" expanded="true" signature="236:4732" ph="..." />
             <marker date="1466667618576" expanded="true" signature="243:504" ph="..." />
             <marker date="1466667618576" expanded="true" signature="512:4732" ph="..." />
@@ -488,7 +520,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="24" column="28" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
-          <folding />
+          <folding>
+            <element signature="n#handlerException#0;n#Controller#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -497,14 +531,13 @@
         <state relative-caret-position="345">
           <caret line="57" column="1" selection-start-line="57" selection-start-column="1" selection-end-line="57" selection-end-column="1" />
           <folding>
-            <element signature="n#create#0;n#Model#0;n#!!top" expanded="false" />
-            <marker date="1466683192410" expanded="true" signature="339:357" ph="select * fro... news" />
-            <marker date="1466683192410" expanded="true" signature="2078:2140" ph="select title... news" />
-            <marker date="1466683192410" expanded="true" signature="2291:2353" ph="INSERT INTO news... " />
-            <marker date="1466683192410" expanded="true" signature="2291:2401" ph="INSERT INTO news... " />
-            <marker date="1466683192410" expanded="true" signature="2291:2403" ph="INSERT INTO news... " />
-            <marker date="1466683192410" expanded="true" signature="2291:2424" ph="INSERT INTO news... " />
-            <marker date="1466683192410" expanded="true" signature="2291:2430" ph="INSERT INTO news... " />
+            <marker date="1466684598302" expanded="true" signature="355:373" ph="select * fro... news" />
+            <marker date="1466684598302" expanded="true" signature="2094:2156" ph="select title... news" />
+            <marker date="1466684598302" expanded="true" signature="2307:2369" ph="INSERT INTO news... " />
+            <marker date="1466684598302" expanded="true" signature="2307:2417" ph="INSERT INTO news... " />
+            <marker date="1466684598302" expanded="true" signature="2307:2419" ph="INSERT INTO news... " />
+            <marker date="1466684598302" expanded="true" signature="2307:2440" ph="INSERT INTO news... " />
+            <marker date="1466684598302" expanded="true" signature="2307:2446" ph="INSERT INTO news... " />
           </folding>
         </state>
       </provider>
@@ -521,6 +554,8 @@
         <state relative-caret-position="405">
           <caret line="207" column="46" selection-start-line="207" selection-start-column="46" selection-end-line="207" selection-end-column="46" />
           <folding>
+            <element signature="n#showHeader#0;n#View#0;n#!!top" expanded="false" />
+            <element signature="n#showFooter#0;n#View#0;n#!!top" expanded="false" />
             <marker date="1466667618576" expanded="true" signature="236:4732" ph="..." />
             <marker date="1466667618576" expanded="true" signature="243:504" ph="..." />
             <marker date="1466667618576" expanded="true" signature="512:4732" ph="..." />
@@ -574,7 +609,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
-          <folding />
+          <folding>
+            <element signature="n#handlerException#0;n#Controller#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -583,14 +620,13 @@
         <state relative-caret-position="345">
           <caret line="57" column="1" selection-start-line="57" selection-start-column="1" selection-end-line="57" selection-end-column="1" />
           <folding>
-            <element signature="n#create#0;n#Model#0;n#!!top" expanded="false" />
-            <marker date="1466683192410" expanded="true" signature="339:357" ph="select * fro... news" />
-            <marker date="1466683192410" expanded="true" signature="2078:2140" ph="select title... news" />
-            <marker date="1466683192410" expanded="true" signature="2291:2353" ph="INSERT INTO news... " />
-            <marker date="1466683192410" expanded="true" signature="2291:2401" ph="INSERT INTO news... " />
-            <marker date="1466683192410" expanded="true" signature="2291:2403" ph="INSERT INTO news... " />
-            <marker date="1466683192410" expanded="true" signature="2291:2424" ph="INSERT INTO news... " />
-            <marker date="1466683192410" expanded="true" signature="2291:2430" ph="INSERT INTO news... " />
+            <marker date="1466684598302" expanded="true" signature="355:373" ph="select * fro... news" />
+            <marker date="1466684598302" expanded="true" signature="2094:2156" ph="select title... news" />
+            <marker date="1466684598302" expanded="true" signature="2307:2369" ph="INSERT INTO news... " />
+            <marker date="1466684598302" expanded="true" signature="2307:2417" ph="INSERT INTO news... " />
+            <marker date="1466684598302" expanded="true" signature="2307:2419" ph="INSERT INTO news... " />
+            <marker date="1466684598302" expanded="true" signature="2307:2440" ph="INSERT INTO news... " />
+            <marker date="1466684598302" expanded="true" signature="2307:2446" ph="INSERT INTO news... " />
           </folding>
         </state>
       </provider>
@@ -607,6 +643,8 @@
         <state relative-caret-position="405">
           <caret line="207" column="46" selection-start-line="207" selection-start-column="46" selection-end-line="207" selection-end-column="46" />
           <folding>
+            <element signature="n#showHeader#0;n#View#0;n#!!top" expanded="false" />
+            <element signature="n#showFooter#0;n#View#0;n#!!top" expanded="false" />
             <marker date="1466667618576" expanded="true" signature="236:4732" ph="..." />
             <marker date="1466667618576" expanded="true" signature="243:504" ph="..." />
             <marker date="1466667618576" expanded="true" signature="512:4732" ph="..." />
@@ -652,7 +690,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
-          <folding />
+          <folding>
+            <element signature="n#handlerException#0;n#Controller#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -668,6 +708,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="n#showHeader#0;n#View#0;n#!!top" expanded="false" />
+            <element signature="n#showFooter#0;n#View#0;n#!!top" expanded="false" />
             <marker date="1466667618576" expanded="true" signature="236:4732" ph="..." />
             <marker date="1466667618576" expanded="true" signature="243:504" ph="..." />
             <marker date="1466667618576" expanded="true" signature="512:4732" ph="..." />
@@ -714,14 +756,13 @@
         <state relative-caret-position="435">
           <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
           <folding>
-            <element signature="n#create#0;n#Model#0;n#!!top" expanded="false" />
-            <marker date="1466683192410" expanded="true" signature="339:357" ph="select * fro... news" />
-            <marker date="1466683192410" expanded="true" signature="2078:2140" ph="select title... news" />
-            <marker date="1466683192410" expanded="true" signature="2291:2353" ph="INSERT INTO news... " />
-            <marker date="1466683192410" expanded="true" signature="2291:2401" ph="INSERT INTO news... " />
-            <marker date="1466683192410" expanded="true" signature="2291:2403" ph="INSERT INTO news... " />
-            <marker date="1466683192410" expanded="true" signature="2291:2424" ph="INSERT INTO news... " />
-            <marker date="1466683192410" expanded="true" signature="2291:2430" ph="INSERT INTO news... " />
+            <marker date="1466684598302" expanded="true" signature="355:373" ph="select * fro... news" />
+            <marker date="1466684598302" expanded="true" signature="2094:2156" ph="select title... news" />
+            <marker date="1466684598302" expanded="true" signature="2307:2369" ph="INSERT INTO news... " />
+            <marker date="1466684598302" expanded="true" signature="2307:2417" ph="INSERT INTO news... " />
+            <marker date="1466684598302" expanded="true" signature="2307:2419" ph="INSERT INTO news... " />
+            <marker date="1466684598302" expanded="true" signature="2307:2440" ph="INSERT INTO news... " />
+            <marker date="1466684598302" expanded="true" signature="2307:2446" ph="INSERT INTO news... " />
           </folding>
         </state>
       </provider>
@@ -737,7 +778,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
-          <folding />
+          <folding>
+            <element signature="n#handlerException#0;n#Controller#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -745,7 +788,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="n#handlerException#0;n#Controller#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -761,6 +806,8 @@
         <state relative-caret-position="90">
           <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
           <folding>
+            <element signature="n#showHeader#0;n#View#0;n#!!top" expanded="false" />
+            <element signature="n#showFooter#0;n#View#0;n#!!top" expanded="false" />
             <marker date="1466667618576" expanded="true" signature="236:4732" ph="..." />
             <marker date="1466667618576" expanded="true" signature="243:504" ph="..." />
             <marker date="1466667618576" expanded="true" signature="512:4732" ph="..." />
@@ -807,14 +854,13 @@
         <state relative-caret-position="15">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding>
-            <element signature="n#create#0;n#Model#0;n#!!top" expanded="false" />
-            <marker date="1466683192410" expanded="true" signature="339:357" ph="select * fro... news" />
-            <marker date="1466683192410" expanded="true" signature="2078:2140" ph="select title... news" />
-            <marker date="1466683192410" expanded="true" signature="2291:2353" ph="INSERT INTO news... " />
-            <marker date="1466683192410" expanded="true" signature="2291:2401" ph="INSERT INTO news... " />
-            <marker date="1466683192410" expanded="true" signature="2291:2403" ph="INSERT INTO news... " />
-            <marker date="1466683192410" expanded="true" signature="2291:2424" ph="INSERT INTO news... " />
-            <marker date="1466683192410" expanded="true" signature="2291:2430" ph="INSERT INTO news... " />
+            <marker date="1466684598302" expanded="true" signature="355:373" ph="select * fro... news" />
+            <marker date="1466684598302" expanded="true" signature="2094:2156" ph="select title... news" />
+            <marker date="1466684598302" expanded="true" signature="2307:2369" ph="INSERT INTO news... " />
+            <marker date="1466684598302" expanded="true" signature="2307:2417" ph="INSERT INTO news... " />
+            <marker date="1466684598302" expanded="true" signature="2307:2419" ph="INSERT INTO news... " />
+            <marker date="1466684598302" expanded="true" signature="2307:2440" ph="INSERT INTO news... " />
+            <marker date="1466684598302" expanded="true" signature="2307:2446" ph="INSERT INTO news... " />
           </folding>
         </state>
       </provider>
@@ -883,46 +929,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/NewsModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.inc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="44" column="33" selection-start-line="44" selection-start-column="33" selection-end-line="44" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/NewsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/framework/Controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebApplication.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/InsuaranceException.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -939,11 +945,95 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/NewsModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ViewTrait.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="50" selection-start-line="4" selection-start-column="50" selection-end-line="4" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ControllerTrait.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="67">
+          <caret line="25" column="43" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ModelTrait.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework/Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding>
+            <element signature="n#handlerException#0;n#Controller#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApplication.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/news.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/NewsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/framework/View.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state relative-caret-position="-772">
+          <caret line="110" column="23" selection-start-line="110" selection-start-column="23" selection-end-line="110" selection-end-column="23" />
           <folding>
+            <element signature="n#showHeader#0;n#View#0;n#!!top" expanded="false" />
+            <element signature="n#showFooter#0;n#View#0;n#!!top" expanded="false" />
             <marker date="1466667618576" expanded="true" signature="236:4732" ph="..." />
             <marker date="1466667618576" expanded="true" signature="243:504" ph="..." />
             <marker date="1466667618576" expanded="true" signature="512:4732" ph="..." />
@@ -987,34 +1077,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/framework/Model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        <state relative-caret-position="241">
+          <caret line="52" column="38" selection-start-line="52" selection-start-column="38" selection-end-line="52" selection-end-column="38" />
           <folding>
-            <element signature="n#create#0;n#Model#0;n#!!top" expanded="false" />
-            <marker date="1466683192410" expanded="true" signature="339:357" ph="select * fro... news" />
-            <marker date="1466683192410" expanded="true" signature="2078:2140" ph="select title... news" />
-            <marker date="1466683192410" expanded="true" signature="2291:2353" ph="INSERT INTO news... " />
-            <marker date="1466683192410" expanded="true" signature="2291:2401" ph="INSERT INTO news... " />
-            <marker date="1466683192410" expanded="true" signature="2291:2403" ph="INSERT INTO news... " />
-            <marker date="1466683192410" expanded="true" signature="2291:2424" ph="INSERT INTO news... " />
-            <marker date="1466683192410" expanded="true" signature="2291:2430" ph="INSERT INTO news... " />
+            <marker date="1466684598302" expanded="true" signature="355:373" ph="select * fro... news" />
+            <marker date="1466684598302" expanded="true" signature="2094:2156" ph="select title... news" />
+            <marker date="1466684598302" expanded="true" signature="2307:2369" ph="INSERT INTO news... " />
+            <marker date="1466684598302" expanded="true" signature="2307:2417" ph="INSERT INTO news... " />
+            <marker date="1466684598302" expanded="true" signature="2307:2419" ph="INSERT INTO news... " />
+            <marker date="1466684598302" expanded="true" signature="2307:2440" ph="INSERT INTO news... " />
+            <marker date="1466684598302" expanded="true" signature="2307:2446" ph="INSERT INTO news... " />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/news.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
