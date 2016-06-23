@@ -1,9 +1,15 @@
 <?php
 
+set_error_handler('Controller::handlerException',ERROR_LEVEL);
+
 class Controller
 {
     protected $view;
     protected $model;
+
+    public static function handlerException($num, $message, $file, $line){
+        throw new InsuaranceException($message, $num, $file, $line);
+    }
 
     function __construct()
     {
@@ -24,12 +30,15 @@ class Controller
     public function actionNew(){
         $this->view->showNewForm()  ;
     }
+
     public function actionCreate(){
-        if($this->model->create($_GET)){
+        try{
+            $this->model->create($_GET);
             echo "OK";
+
         }
-        else{
-            echo $this->model->error();
+        catch(SqlException $_e){
+            echo $_e->getMessage();
         }
     }
 }
