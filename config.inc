@@ -39,4 +39,29 @@ function controllersAutoload($className)
 }
 spl_autoload_register('controllersAutoload');
 
-//TODO: Доделать подключение остальных папок
+function modelsAutoload($className)
+{
+    $fileName = $_SERVER['DOCUMENT_ROOT']."/app/models/$className.php";
+    if (file_exists($fileName)) {
+        require_once ($fileName);
+    }
+}
+spl_autoload_register('modelsAutoload');
+
+function viewsAutoload($className)
+{
+    $fileName = $_SERVER['DOCUMENT_ROOT']."/app/views/$className.php";
+    if (file_exists($fileName)) {
+        require_once ($fileName);
+    }
+}
+spl_autoload_register('viewsAutoload');
+
+function filesAutoload($className)
+{
+    $fileName = $_SERVER['DOCUMENT_ROOT']."/$className.php";
+    if (file_exists($fileName)) {
+        require_once ($fileName);
+    }
+}
+spl_autoload_register('filesAutoload');

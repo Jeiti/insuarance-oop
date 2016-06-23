@@ -6,9 +6,9 @@ class Model
     public function __construct() {
         $this->link = mysqli_connect(DBHOSTNAME, DBUSER, DBPASSWORD, DBBDNAME);
     }
-    public function __destruct() {
+/*    public function __destruct() {
         mysqli_close($this->link);
-    }
+    }*/
 
     public function all() {
         $res=mysqli_query($this->link,"select * from news");
@@ -28,11 +28,20 @@ class Model
                     $content = substr($content,0,120);//обрезать строку до 120 символов
                     $content.="...";
                 }
-                $array[] = ['title'=>   iconv(mb_detect_encoding($title), "UTF-8", $title),//iconv - функция для изменения кодировки передаваемого текста
-                    'content'=> @iconv(mb_detect_encoding($content), "UTF-8", $content),//iconv - функция для изменения кодировки передаваемого текста
-                    'id'=>      $id,
-                    'picture'=> $picture
-                ];
+                if(mb_detect_encoding($content)=="UTF-8"){
+                    $array[] = ['title'=>   @iconv(mb_detect_encoding($title), "UTF-8", $title),//iconv - функция для изменения кодировки передаваемого текста
+                        'content'=> $content,
+                        'id'=>      $id,
+                        'picture'=> $picture
+                    ];
+                }
+                else{
+                    $array[] = ['title'=>   iconv(mb_detect_encoding($title), "UTF-8", $title),//iconv - функция для изменения кодировки передаваемого текста
+                        'content'=> @iconv(mb_detect_encoding($content), "UTF-8", $content),//iconv - функция для изменения кодировки передаваемого текста
+                        'id'=>      $id,
+                        'picture'=> $picture
+                    ];
+                }
             }
         }
         return $array;

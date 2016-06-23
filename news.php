@@ -4,9 +4,9 @@ require_once ("config.inc");
 
 $controller = new NewsController();
 
-$params = array_merge($_GET,$_POST);
+WebApplication::$params = array_merge($_GET,$_POST);
 
-$action = (isset($params['action'])?$params['action']:"index");
+$action = (isset(WebApplication::$params['action'])?WebApplication::$params['action']:"index");
 
 switch ($action){
     case 'show':
@@ -19,6 +19,5 @@ switch ($action){
         $controller->actionCreate();
         break;
 }
-//TODO: сделать класс WebApplication в котором реализовать $params как свойство статическое или экземпляра класса
 //TODO: сделать классы Controller Model View абстрактными
 //TODO: реализация обратной связи

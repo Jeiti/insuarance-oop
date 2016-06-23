@@ -33,7 +33,7 @@ class Controller
 
     public function actionCreate(){
         try{
-            $this->model->create(array_merge($_POST,$_FILES['picture']));//TODO: заменить на $params (в скобках)
+            $this->model->create(array_merge(WebApplication::$params,$_FILES['picture']));//TODO: заменить на $params (в скобках)
             echo "OK";
 
         }
