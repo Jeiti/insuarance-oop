@@ -94,13 +94,16 @@ class View{
     protected function showFooter(){
         echo '
         <footer>
-        <hr>
-        <p class="muted pull-left">Insuarance-oz &copy; 2016</p>
+        <div class="afterNews"></div>
+        
+        <div class="container">
+            <hr>
+            <p class="muted pull-left">Insuarance-oz &copy; 2016</p>
+        </div>
         </footer>
         <a type="button" class="btn btn-sm btn-primary ontop" for="ontop" href="#">
             Наверх
         </a>
-        </div>
         <script src="../js/jquery.min.js"></script>
         <script src="../js/bootstrap.min.js"></script>
         <script src="../js/scripts.js"></script>
@@ -159,37 +162,28 @@ class View{
 <hr>
 <!---------------==================================================================================================================----------------------------------------->
 ';
-        $this->showNews($data);
+    $this->showNews($data);
     }
     private function showNews($data=[]){
-
         $i=0;
 
         foreach($data as $news){
             if ($i % 3)
-                echo "<div class=\"row\">";
-            echo "<div class=\"col-md-4\">
-                <div class=\"thumbnail\">
-                <img class=\"img-rounded\" src=\"img/news_img/$news[picture]\">
-                <h3>$news[title]</h3>
-                <p>$news[content]</p>
-                <p>
-                <a class=\"btn btn-primary\" href=\"/news.php?action=show&id=$news[id]\">Подробнее</a>
-
-                </p>
-
-                </div>
-
-            </div>";
+                echo "<div class='row'>";
+                    echo "<div class='col-md-4'>
+                            <div class='thumbnail'>
+                                <img class=\"img-rounded\" src=\"/img/news_img/$news[picture]\">
+                                <h3>$news[title]</h3>
+                                <p>$news[content]</p>
+                                <p>
+                                    <a class=\"btn btn-primary\" href=\"/news.php?action=show&id=$news[id]\">Подробнее</a>
+                                </p>
+                            </div>
+                           </div>";
 
             if(($i % 3) == 2)
-
                 echo "</div>";
-
             $i++;
-
         }
-
     }
-
 }

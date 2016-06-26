@@ -1,6 +1,9 @@
 <?php
 
-set_error_handler('Controller::handlerException',ERROR_LEVEL);
+function handlerException($num, $message, $file, $line){
+    throw new InsuaranceException($message, $num, $file, $line);
+}
+set_error_handler('handlerException',ERROR_LEVEL);
 
 class Controller
 {
@@ -8,9 +11,7 @@ class Controller
     protected $view;
     protected $model;
 
-    public static function handlerException($num, $message, $file, $line){
-        throw new InsuaranceException($message, $num, $file, $line);
-    }
+
 
     function __construct()
     {
@@ -34,7 +35,7 @@ class Controller
 
     public function actionCreate(){
         try{
-            $this->model->create(array_merge(WebApplication::$params,$_FILES['picture']));//TODO: заменить на $params (в скобках)
+            $this->model->create(array_merge(WebApplication::$params,$_FILES['picture']));
             echo "OK";
 
         }
