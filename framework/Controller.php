@@ -5,13 +5,10 @@ function handlerException($num, $message, $file, $line){
 }
 set_error_handler('handlerException',ERROR_LEVEL);
 
-class Controller
+abstract class Controller
 {
-    use ControllerTrait;
     protected $view;
     protected $model;
-
-
 
     function __construct()
     {
@@ -23,6 +20,7 @@ class Controller
         $array = $this->model->all();
         $this->view->showLayout($array);
     }
+
     
     public function actionShow(){
         $data = $this->model->find($_GET['id']);
@@ -37,7 +35,6 @@ class Controller
         try{
             $this->model->create(array_merge(WebApplication::$params,$_FILES['picture']));
             echo "OK";
-
         }
         catch(SqlException $_e){
             echo $_e->getMessage();

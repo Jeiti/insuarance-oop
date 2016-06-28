@@ -7,7 +7,7 @@ ini_set('display_startup_errors', 1);
 
 require ("config.inc");
 
-$controller = new Controller();
+$controller = new IndexController();
 /*реализация маршрутизации*/
 $action=(isset($_GET['action']))?$_GET['action']:"index";
 switch ($action){
