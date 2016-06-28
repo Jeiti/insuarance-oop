@@ -1,6 +1,6 @@
 <?php
 
-class View{
+abstract class View{
     function showLayout($data=[]){
         $this->showHeader();
         $this->showContent($data);

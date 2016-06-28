@@ -10,11 +10,11 @@ abstract class Controller
     protected $view;
     protected $model;
 
-    function __construct()
+/*    function __construct()
     {
         $this->view=new View();
         $this->model=new Model();
-    }
+    }*/
 
     public function actionIndex(){
         $array = $this->model->all();
