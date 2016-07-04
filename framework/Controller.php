@@ -28,7 +28,7 @@ abstract class Controller
     }
     
     public function actionNew(){
-        $this->view->showLayout()  ;
+        $this->view->showLayout();
     }
 
     public function actionCreate(){

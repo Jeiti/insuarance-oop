@@ -360,3 +360,4 @@
 [Tue Jun 28 08:03:59.282618 2016] [:error] [pid 3588] [client 127.0.0.1:38051] PHP Fatal error:  Cannot instantiate abstract class Controller in /home/evgen/www/insuarance_oop/index.php on line 10
 [Tue Jun 28 08:03:59.282684 2016] [:error] [pid 3588] [client 127.0.0.1:38051] PHP Stack trace:
 [Tue Jun 28 08:03:59.282702 2016] [:error] [pid 3588] [client 127.0.0.1:38051] PHP   1. {main}() /home/evgen/www/insuarance_oop/index.php:0
+[Fri Jul 01 13:29:28.991073 2016] [:error] [pid 1643] [client 127.0.0.1:45480] script '/home/evgen/www/insuarance_oop/nfeedback.php' not found or unable to stat

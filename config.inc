@@ -32,7 +32,7 @@ spl_autoload_register('frameworkAutoload');
 
 function controllersAutoload($className)
 {
-    $fileName = $_SERVER['DOCUMENT_ROOT']."/app/controllers/$className.php";
+    $fileName = $_SERVER['DOCUMENT_ROOT']."./app/controllers/$className.php";
     if (file_exists($fileName)) {
         require_once ($fileName);
     }
@@ -41,7 +41,7 @@ spl_autoload_register('controllersAutoload');
 
 function modelsAutoload($className)
 {
-    $fileName = $_SERVER['DOCUMENT_ROOT']."/app/models/$className.php";
+    $fileName = $_SERVER['DOCUMENT_ROOT']."./app/models/$className.php";
     if (file_exists($fileName)) {
         require_once ($fileName);
     }
@@ -50,7 +50,7 @@ spl_autoload_register('modelsAutoload');
 
 function viewsAutoload($className)
 {
-    $fileName = $_SERVER['DOCUMENT_ROOT']."/app/views/$className.php";
+    $fileName = $_SERVER['DOCUMENT_ROOT']."./app/views/$className.php";
     if (file_exists($fileName)) {
         require_once ($fileName);
     }

@@ -19,5 +19,3 @@ switch ($action){
         $controller->actionCreate();
         break;
 }
-//TODO: сделать классы Controller Model View абстрактными - решено при помощи Trait-ов!!!!!!!
-//TODO: реализация обратной связи - Решено!!!

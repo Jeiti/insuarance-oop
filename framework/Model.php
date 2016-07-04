@@ -71,6 +71,8 @@ abstract class Model
 
         //блок формирования строки запроса INSERT
         $insert = "INSERT INTO $values[0] ("; //вставляем название таблицы
+        //TODO: вынести название таблицы в качестве свойства Model
+        
 
         $keys = array_slice($keys,1);//вырезаем название таблицы из массива
         $values = array_slice($values,1);//вырезаем название таблицы из массива
