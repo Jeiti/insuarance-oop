@@ -1,15 +1,19 @@
 <?php
-require_once("config.inc");
+header("Content-type:text/html; charset=utf-8");
+require_once ("config.inc");
 abstract class Model
 {
     protected $link;
+    protected $tablename;
+
     public function __construct() {
         $this->link = mysqli_connect(DBHOSTNAME, DBUSER, DBPASSWORD, DBBDNAME);
     }
     public function __destruct() {
         mysqli_close($this->link);
     }
-
+//TODO: разделить/применить принцип единственной/единой ответственности -> single
+//TODO: Применить принцип -> OSR открытости/закрытости, абстрагироваться от конкретной СУБД
     public function all() {
         $res=mysqli_query($this->link,"select * from news");
         $array=[];
@@ -66,12 +70,11 @@ abstract class Model
             $keys[] = $i->key();
             $values[] = $i->current();
         }//конец блока - "разделить массив на 2"
-
+        $tablename = $values[0];
 
 
         //блок формирования строки запроса INSERT
-        $insert = "INSERT INTO $values[0] ("; //вставляем название таблицы
-        //TODO: вынести название таблицы в качестве свойства Model
+        $insert = "INSERT INTO $tablename ("; //вставляем название таблицы
         
 
         $keys = array_slice($keys,1);//вырезаем название таблицы из массива
