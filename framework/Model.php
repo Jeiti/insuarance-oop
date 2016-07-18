@@ -1,19 +1,49 @@
 <?php
 header("Content-type:text/html; charset=utf-8");
-require_once ("config.inc");
+require_once ("../config.inc");
 abstract class Model
 {
-    protected $link;
+    protected $subd;
     protected $tablename;
 
-    public function __construct() {
-        $this->link = mysqli_connect(DBHOSTNAME, DBUSER, DBPASSWORD, DBBDNAME);
+    public function __construct(ISubd $_subd) {
+        //TODO: Мы не можем создавать экземпляр абстактного класса, как быть?
+        // Думаю, что унаследовав этот класс, у класса-наследника можно переопределить метод __construct
+        //если этого не делать, сработает именно этот метод при создании экземпляра унаследованного класса,
+        // вопрос - как передать сюда в этот метод указанный параметр
+        $this->subd = $_subd;
+        if(!$this->subd->isConnected()){
+            throw new ModelException("Нет соединения с БД");
+        }
     }
     public function __destruct() {
-        mysqli_close($this->link);
+        $this->subd->disconnect();
     }
+
 //TODO: разделить/применить принцип единственной/единой ответственности -> single
+//Предлагаю сделать следующую структуру:
+//Сделать функции например (select, insert, update, delete), в конце return
+//В этих функциях прописать прием параметров, и на основании этого построение запроса
+//А функции all, find, create выделить в отдельный класс например class functions с использованием Reflection
+//и в зависимости от пришедшего класса определить поведение функции
+//функцию error выделить в отдельный класс class Errors и там определить поведение при ошибке.
+
 //TODO: Применить принцип -> OSR открытости/закрытости, абстрагироваться от конкретной СУБД
+//Создать интерфейс iSUBD в котором создать private метод changeSubd($message)
+//Создать public function change();   {$this->changeSubd($message)}
+//В этом классе в методе construct сделать проверку входящего класса (ClassnameiSUBD $peremSubd, $commandConnectSubd)
+//В этом классе создать protected $subd
+//В этом классе создать protected $commandConnectSubd
+//В этом классе в методе construct осуществить выбор СУБД - $this->SUBD = $peremSubd;
+// $this->commandConnectSubd = $commandConnectSubd;
+// $this->commandConnectSubd(DBHOSTNAME, DBUSER, DBPASSWORD, DBBDNAME)
+
+//TODO: Создать класс SQLiteSubd
+
+//TODO: Интерфейс можно применить к сущности имеющей НАБОР МЕТОДОВ и часть, которая БУДЕТ МЕНЯТЬСЯ->
+//TODO:->(чтобы часть была изменяемой ее надо выделить в отдельный класс и абстрагировать(implements ISubd)
+//TODO:->эту часть в виде интерфейса, а в интерфейсе описать публичные общие методы для работы с подобными сущностями)
+
     public function all() {
         $res=mysqli_query($this->link,"select * from news");
         $array=[];
@@ -75,7 +105,7 @@ abstract class Model
 
         //блок формирования строки запроса INSERT
         $insert = "INSERT INTO $tablename ("; //вставляем название таблицы
-        
+
 
         $keys = array_slice($keys,1);//вырезаем название таблицы из массива
         $values = array_slice($values,1);//вырезаем название таблицы из массива

@@ -361,3 +361,12 @@
 [Tue Jun 28 08:03:59.282684 2016] [:error] [pid 3588] [client 127.0.0.1:38051] PHP Stack trace:
 [Tue Jun 28 08:03:59.282702 2016] [:error] [pid 3588] [client 127.0.0.1:38051] PHP   1. {main}() /home/evgen/www/insuarance_oop/index.php:0
 [Fri Jul 01 13:29:28.991073 2016] [:error] [pid 1643] [client 127.0.0.1:45480] script '/home/evgen/www/insuarance_oop/nfeedback.php' not found or unable to stat
+[Sat Jul 16 01:26:11.574558 2016] [:error] [pid 5879] [client 127.0.0.1:60642] PHP Fatal error:  Class 'IndexController' not found in /home/evgen/www/insuarance_oop/index.php on line 5
+[Sat Jul 16 01:26:11.574675 2016] [:error] [pid 5879] [client 127.0.0.1:60642] PHP Stack trace:
+[Sat Jul 16 01:26:11.574696 2016] [:error] [pid 5879] [client 127.0.0.1:60642] PHP   1. {main}() /home/evgen/www/insuarance_oop/index.php:0
+[Sat Jul 16 01:26:27.514028 2016] [:error] [pid 5900] [client 127.0.0.1:60650] PHP Fatal error:  Class 'IndexController' not found in /home/evgen/www/insuarance_oop/index.php on line 5
+[Sat Jul 16 01:26:27.514098 2016] [:error] [pid 5900] [client 127.0.0.1:60650] PHP Stack trace:
+[Sat Jul 16 01:26:27.514108 2016] [:error] [pid 5900] [client 127.0.0.1:60650] PHP   1. {main}() /home/evgen/www/insuarance_oop/index.php:0
+[Sat Jul 16 01:41:37.373493 2016] [:error] [pid 5791] [client 127.0.0.1:60698] PHP Fatal error:  Class 'IndexController' not found in /home/evgen/www/insuarance_oop/index.php on line 5
+[Sat Jul 16 01:41:37.373561 2016] [:error] [pid 5791] [client 127.0.0.1:60698] PHP Stack trace:
+[Sat Jul 16 01:41:37.373572 2016] [:error] [pid 5791] [client 127.0.0.1:60698] PHP   1. {main}() /home/evgen/www/insuarance_oop/index.php:0

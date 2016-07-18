@@ -2094,3 +2094,7 @@
 127.0.0.1 - - [01/Jul/2016:13:30:16 +0300] "GET /feedback.php?action=new HTTP/1.1" 200 1806 "-" "Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0"
 127.0.0.1 - - [01/Jul/2016:17:18:06 +0300] "GET /favicon.ico HTTP/1.1" 404 508 "-" "Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0"
 127.0.0.1 - - [01/Jul/2016:17:18:06 +0300] "GET /favicon.ico HTTP/1.1" 404 507 "-" "Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0"
+127.0.0.1 - - [16/Jul/2016:01:26:11 +0300] "HEAD / HTTP/1.1" 200 220 "-" "Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36"
+127.0.0.1 - - [16/Jul/2016:01:26:27 +0300] "HEAD / HTTP/1.1" 200 220 "-" "Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36"
+127.0.0.1 - - [16/Jul/2016:01:41:37 +0300] "GET / HTTP/1.1" 200 721 "-" "Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36"
+127.0.0.1 - - [16/Jul/2016:01:41:37 +0300] "GET /favicon.ico HTTP/1.1" 404 507 "http://insuarance_oop.loc/" "Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36"
