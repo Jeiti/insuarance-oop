@@ -42,4 +42,3 @@ class MySqlSubd implements ISubd
         return (mysqli_error(self::$link));
     }
 }
-//TODO: применить шаблон проектирования "ОДИНОЧКА" к данному классу, чтобы реализовать одно соединение с БД.
