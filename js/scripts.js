@@ -1,3 +1,4 @@
+/*
 $(document).ready(function(){
     $(document).on('click','a.pagination',function (event) {//функция определяет какая страница нажата ->
         // -> и открывает страницу с новостями и пагинацию перегружает
@@ -31,7 +32,7 @@ $(document).ready(function(){
                                     <h3>" + val.title + "</h3>\
                                     <p>" + val.content + "</p>\
                                     <p>\
-                                        <a class='btn btn-primary' href='/page_news.php?new=" + val.id + "'>Подробнее</a>\
+                                        <a class='btn btn-primary' href='/news.php?id=" + val.id + "'>Подробнее</a>\
                                     </p>\
                                 </div>\
                         </div>");//вывести блок новостей
@@ -70,3 +71,4 @@ $(document).ready(function(){
 
 
 });
+*/

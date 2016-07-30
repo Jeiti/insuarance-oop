@@ -1,20 +1,21 @@
 <?php
 
-class View{
+abstract class View{
     function showLayout($data=[]){
         $this->showHeader();
         $this->showContent($data);
         $this->showFooter();
     }
-    function showHeader(){
+
+    protected function showHeader(){
         echo '<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <title>Insuarance-oz</title>
     <meta name="author" content="Insuarance-oz">
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -34,7 +35,7 @@ class View{
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.php" id="ontop">Insuarance-oz</a>
+                    <a class="navbar-brand" href="../index.php" id="ontop">Insuarance-oz</a>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
@@ -90,29 +91,27 @@ class View{
     </div>
 ';
     }
-    function showFooter(){
+    protected function showFooter(){
         echo '
         <footer>
-        <hr>
-        <p class="muted pull-left">Insuarance-oz &copy; 2016</p>
+        <div class="afterNews"></div>
+        
+        <div class="container">
+            <hr>
+            <p class="muted pull-left">Insuarance-oz &copy; 2016</p>
+        </div>
         </footer>
         <a type="button" class="btn btn-sm btn-primary ontop" for="ontop" href="#">
             Наверх
         </a>
-        </div>
-        <script src="js/jquery.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/scripts.js"></script>
+        <script src="../js/jquery.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/scripts.js"></script>
         
         </body>
         </html>';
     }
-
-
-
-
-
-    function showContent($data=[]){
+    protected function showContent($data=[]){
         echo '<div class="row">
     <div class="col-sm-8">
         <div class="jumbotron" contenteditable="true">
@@ -163,26 +162,27 @@ class View{
 <hr>
 <!---------------==================================================================================================================----------------------------------------->
 ';
-        $this->showNews($data);
+    $this->showNews($data);
     }
     private function showNews($data=[]){
         $i=0;
+
         foreach($data as $news){
             if ($i % 3)
-                echo "<div class=\"row\">";
-            echo "<div class=\"col-md-4\">
-                <div class=\"thumbnail\">
-                <img class=\"img-rounded\" src=\"img/news_img/1.jpeg\">
-                <h3>$news[title]</h3>
-                <p>С другой стороны рамки и место обучения кадров в значительной степени обуславливает создание существенных финансовых и административных условий. Товарищи! постоянный количественный рост и сфера нашей активности играет важную роль в формировании дальнейших направлений развития. Повседневная практика показывает, что постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения существенных финансовых и административных условий. Не следует, однако забывать, что укрепление и развитие структуры требуют от нас анализа существенных финансовых и административных условий. </p>
-                <p>
-                <a class=\"btn btn-primary\" href=\"/page_news.php?new=21\">Подробнее</a>
-                </p>
-                </div>
-            </div>";
+                echo "<div class='row'>";
+                    echo "<div class='col-md-4'>
+                            <div class='thumbnail'>
+                                <img class=\"img-rounded\" src=\"/img/news_img/$news[picture]\">
+                                <h3>$news[title]</h3>
+                                <p>$news[content]</p>
+                                <p>
+                                    <a class=\"btn btn-primary\" href=\"/news.php?action=show&id=$news[id]\">Подробнее</a>
+                                </p>
+                            </div>
+                           </div>";
+
             if(($i % 3) == 2)
                 echo "</div>";
-
             $i++;
         }
     }
