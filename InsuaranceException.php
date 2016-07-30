@@ -1,6 +1,6 @@
 <?php
 
-class InsuaranceException extends Exception
+class InsuaranceException extends \Exception
 {
     public function __construct($message, $code, $file, $line, Exception $previous=null)
     {

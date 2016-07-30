@@ -20,3 +20,5 @@ class FeedbackController extends Controller
         header("location:/index.php");
     }
 }
+
+//TODO: Сделать схемы и реализацию кода, слева uml, справа код

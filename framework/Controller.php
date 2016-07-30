@@ -41,3 +41,5 @@ abstract class Controller
         }
     }
 }
+
+//TODO: Реализовать шаблон - абстрактная фабрика

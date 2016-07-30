@@ -370,3 +370,30 @@
 [Sat Jul 16 01:41:37.373493 2016] [:error] [pid 5791] [client 127.0.0.1:60698] PHP Fatal error:  Class 'IndexController' not found in /home/evgen/www/insuarance_oop/index.php on line 5
 [Sat Jul 16 01:41:37.373561 2016] [:error] [pid 5791] [client 127.0.0.1:60698] PHP Stack trace:
 [Sat Jul 16 01:41:37.373572 2016] [:error] [pid 5791] [client 127.0.0.1:60698] PHP   1. {main}() /home/evgen/www/insuarance_oop/index.php:0
+[Sat Jul 30 09:36:56.800250 2016] [negotiation:error] [pid 4921] [client 127.0.0.1:35430] AH00687: Negotiation: discovered file(s) matching request: /home/evgen/www/insuarance_oop/news (None could be negotiated).
+[Sat Jul 30 09:37:22.703888 2016] [negotiation:error] [pid 4922] [client 127.0.0.1:35431] AH00687: Negotiation: discovered file(s) matching request: /home/evgen/www/insuarance_oop/news (None could be negotiated).
+[Sat Jul 30 09:37:33.447497 2016] [:error] [pid 4923] [client 127.0.0.1:35432] PHP Notice:  Undefined variable: controllerName in /home/evgen/www/insuarance_oop/framework/FrontController.php on line 11
+[Sat Jul 30 09:37:33.447578 2016] [:error] [pid 4923] [client 127.0.0.1:35432] PHP Stack trace:
+[Sat Jul 30 09:37:33.447593 2016] [:error] [pid 4923] [client 127.0.0.1:35432] PHP   1. {main}() /home/evgen/www/insuarance_oop/index.php:0
+[Sat Jul 30 09:37:33.447607 2016] [:error] [pid 4923] [client 127.0.0.1:35432] PHP   2. FrontController::start() /home/evgen/www/insuarance_oop/index.php:5
+[Sat Jul 30 09:37:33.447670 2016] [:error] [pid 4923] [client 127.0.0.1:35432] PHP Notice:  Undefined variable: actionName in /home/evgen/www/insuarance_oop/framework/FrontController.php on line 12
+[Sat Jul 30 09:37:33.447691 2016] [:error] [pid 4923] [client 127.0.0.1:35432] PHP Stack trace:
+[Sat Jul 30 09:37:33.447702 2016] [:error] [pid 4923] [client 127.0.0.1:35432] PHP   1. {main}() /home/evgen/www/insuarance_oop/index.php:0
+[Sat Jul 30 09:37:33.447713 2016] [:error] [pid 4923] [client 127.0.0.1:35432] PHP   2. FrontController::start() /home/evgen/www/insuarance_oop/index.php:5
+[Sat Jul 30 09:37:33.448426 2016] [:error] [pid 4923] [client 127.0.0.1:35432] PHP Fatal error:  Cannot instantiate abstract class Controller in /home/evgen/www/insuarance_oop/framework/FrontController.php on line 15
+[Sat Jul 30 09:37:33.448465 2016] [:error] [pid 4923] [client 127.0.0.1:35432] PHP Stack trace:
+[Sat Jul 30 09:37:33.448476 2016] [:error] [pid 4923] [client 127.0.0.1:35432] PHP   1. {main}() /home/evgen/www/insuarance_oop/index.php:0
+[Sat Jul 30 09:37:33.448488 2016] [:error] [pid 4923] [client 127.0.0.1:35432] PHP   2. FrontController::start() /home/evgen/www/insuarance_oop/index.php:5
+[Sat Jul 30 09:39:47.490919 2016] [:error] [pid 4924] [client 127.0.0.1:35433] PHP Notice:  Undefined variable: controllerName in /home/evgen/www/insuarance_oop/framework/FrontController.php on line 11
+[Sat Jul 30 09:39:47.491023 2016] [:error] [pid 4924] [client 127.0.0.1:35433] PHP Stack trace:
+[Sat Jul 30 09:39:47.491037 2016] [:error] [pid 4924] [client 127.0.0.1:35433] PHP   1. {main}() /home/evgen/www/insuarance_oop/index.php:0
+[Sat Jul 30 09:39:47.491051 2016] [:error] [pid 4924] [client 127.0.0.1:35433] PHP   2. FrontController::start() /home/evgen/www/insuarance_oop/index.php:5
+[Sat Jul 30 09:39:47.491119 2016] [:error] [pid 4924] [client 127.0.0.1:35433] PHP Notice:  Undefined variable: actionName in /home/evgen/www/insuarance_oop/framework/FrontController.php on line 12
+[Sat Jul 30 09:39:47.491128 2016] [:error] [pid 4924] [client 127.0.0.1:35433] PHP Stack trace:
+[Sat Jul 30 09:39:47.491138 2016] [:error] [pid 4924] [client 127.0.0.1:35433] PHP   1. {main}() /home/evgen/www/insuarance_oop/index.php:0
+[Sat Jul 30 09:39:47.491150 2016] [:error] [pid 4924] [client 127.0.0.1:35433] PHP   2. FrontController::start() /home/evgen/www/insuarance_oop/index.php:5
+[Sat Jul 30 09:39:47.491247 2016] [:error] [pid 4924] [client 127.0.0.1:35433] PHP Fatal error:  Cannot instantiate abstract class Controller in /home/evgen/www/insuarance_oop/framework/FrontController.php on line 15
+[Sat Jul 30 09:39:47.491256 2016] [:error] [pid 4924] [client 127.0.0.1:35433] PHP Stack trace:
+[Sat Jul 30 09:39:47.491267 2016] [:error] [pid 4924] [client 127.0.0.1:35433] PHP   1. {main}() /home/evgen/www/insuarance_oop/index.php:0
+[Sat Jul 30 09:39:47.491279 2016] [:error] [pid 4924] [client 127.0.0.1:35433] PHP   2. FrontController::start() /home/evgen/www/insuarance_oop/index.php:5
+[Sat Jul 30 09:40:11.087024 2016] [negotiation:error] [pid 4925] [client 127.0.0.1:35434] AH00687: Negotiation: discovered file(s) matching request: /home/evgen/www/insuarance_oop/news (None could be negotiated).
