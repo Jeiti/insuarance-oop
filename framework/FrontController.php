@@ -1,6 +1,7 @@
 <?php
 namespace framework;
 class FrontController
+
 {
     public static function start() {
         $f=new FrontController;
