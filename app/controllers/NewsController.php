@@ -1,5 +1,11 @@
 <?php
-
+namespace app\controllers;
+use framework\Controller;
+use app\views\NewsView;
+use app\views\NewsAddView;
+use app\models\NewsModel;
+use framework\MySqlSubd;
+use main\WebApplication;
 class NewsController extends Controller{
 
     function __construct(){

@@ -1,11 +1,8 @@
 <?php
-
-/**
- * Created by PhpStorm.
- * User: evgen
- * Date: 28.06.16
- * Time: 8:05
- */
+namespace app\controllers;
+use framework\Controller;
+use app\views\IndexView;
+use app\models\IndexModel;
 class IndexController extends Controller
 {
     function __construct()

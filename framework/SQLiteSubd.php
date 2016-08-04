@@ -1,5 +1,5 @@
 <?php
-
+namespace framework;
 class SQLiteSubd implements ISubd{
     private $link;
 

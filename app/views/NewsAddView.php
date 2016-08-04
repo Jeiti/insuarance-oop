@@ -1,5 +1,6 @@
 <?php
-
+namespace app\views;
+use framework\View;
 class NewsAddView extends View
 {
     public function showContent($data=[]){

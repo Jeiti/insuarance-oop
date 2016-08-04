@@ -1,11 +1,6 @@
 <?php
-
-/**
- * Created by PhpStorm.
- * User: evgen
- * Date: 28.06.16
- * Time: 8:28
- */
+namespace app\views;
+use framework\View;
 class IndexView extends View
 {
 

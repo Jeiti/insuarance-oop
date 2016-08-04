@@ -1,5 +1,5 @@
 <?php
-
+namespace app\views;
 class TestView
 {
     public function showLayout($_data){

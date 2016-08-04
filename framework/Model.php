@@ -1,4 +1,5 @@
 <?php
+namespace framework;
 header("Content-type:text/html; charset=utf-8");
 require_once ("../config.inc");
 abstract class Model
@@ -112,5 +113,4 @@ abstract class Model
 }
 
 //TODO: Построить диаграмму классов в DIA или онлайн.
-//TODO: разбить все по namespace
 //TODO: применить абстрактную фабрику для создания модели и представления в контроллере

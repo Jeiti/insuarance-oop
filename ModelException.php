@@ -1,6 +1,6 @@
 <?php
-
-class ModelException extends Exception
+namespace main;
+class ModelException extends \Exception
 {
 
 }

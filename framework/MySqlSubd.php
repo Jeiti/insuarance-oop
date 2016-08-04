@@ -1,5 +1,5 @@
 <?php
-
+namespace framework;
 class MySqlSubd implements ISubd
 {
     private static $link=NULL;

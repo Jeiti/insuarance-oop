@@ -1,5 +1,9 @@
 <?php
-
+namespace app\controllers;
+use framework\Controller;
+use main\WebApplication;
+use app\views\FeedbackView;
+use app\models\FeedbackModel;
 class FeedbackController extends Controller
 {
     function __construct()

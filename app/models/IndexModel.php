@@ -1,11 +1,6 @@
 <?php
-
-/**
- * Created by PhpStorm.
- * User: evgen
- * Date: 28.06.16
- * Time: 8:28
- */
+namespace app\models;
+use framework\Model;
 class IndexModel extends Model
 {
 

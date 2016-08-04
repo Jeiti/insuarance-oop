@@ -1,5 +1,5 @@
 <?php
-
+namespace framework;
 abstract class View{
     function showLayout($data=[]){
         $this->showHeader();

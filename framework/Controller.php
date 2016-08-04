@@ -1,5 +1,5 @@
 <?php
-
+namespace framework;
 function handlerException($num, $message, $file, $line){
     throw new InsuaranceException($message, $num, $file, $line);
 }

@@ -1,5 +1,5 @@
 <?php
-
+namespace framework;
 interface ISubd
 {
     public function connect($dbName, $host, $login, $password);

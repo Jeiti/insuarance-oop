@@ -1,5 +1,5 @@
 <?php
-
+namespace app\controllers;
 class TestController
 {
     private $view;
