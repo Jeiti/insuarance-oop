@@ -1,5 +1,8 @@
 <?php
 namespace framework;
+use main\SqlException;
+use main\ModelException;
+use \ArrayObject;
 header("Content-type:text/html; charset=utf-8");
 require_once ("../config.inc");
 abstract class Model

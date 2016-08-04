@@ -1,6 +1,7 @@
 <?php
 namespace main;
-class InsuaranceException extends \Exception
+use \Exception;
+class InsuaranceException extends Exception
 {
     public function __construct($message, $code, $file, $line, Exception $previous=null)
     {
