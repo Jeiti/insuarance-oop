@@ -397,3 +397,113 @@
 [Sat Jul 30 09:39:47.491267 2016] [:error] [pid 4924] [client 127.0.0.1:35433] PHP   1. {main}() /home/evgen/www/insuarance_oop/index.php:0
 [Sat Jul 30 09:39:47.491279 2016] [:error] [pid 4924] [client 127.0.0.1:35433] PHP   2. FrontController::start() /home/evgen/www/insuarance_oop/index.php:5
 [Sat Jul 30 09:40:11.087024 2016] [negotiation:error] [pid 4925] [client 127.0.0.1:35434] AH00687: Negotiation: discovered file(s) matching request: /home/evgen/www/insuarance_oop/news (None could be negotiated).
+[Thu Aug 04 08:30:59.617416 2016] [negotiation:error] [pid 1798] [client 127.0.0.1:41710] AH00687: Negotiation: discovered file(s) matching request: /home/evgen/www/insuarance_oop/news (None could be negotiated).
+[Thu Aug 04 08:31:12.690067 2016] [negotiation:error] [pid 1801] [client 127.0.0.1:41711] AH00687: Negotiation: discovered file(s) matching request: /home/evgen/www/insuarance_oop/news (None could be negotiated).
+[Thu Aug 04 08:31:34.112348 2016] [negotiation:error] [pid 1800] [client 127.0.0.1:41714] AH00687: Negotiation: discovered file(s) matching request: /home/evgen/www/insuarance_oop/news (None could be negotiated).
+[Thu Aug 04 08:31:50.123064 2016] [negotiation:error] [pid 1799] [client 127.0.0.1:41717] AH00687: Negotiation: discovered file(s) matching request: /home/evgen/www/insuarance_oop/news (None could be negotiated).
+[Thu Aug 04 08:32:15.877288 2016] [negotiation:error] [pid 2649] [client 127.0.0.1:41718] AH00687: Negotiation: discovered file(s) matching request: /home/evgen/www/insuarance_oop/news (None could be negotiated).
+[Thu Aug 04 08:32:29.489898 2016] [negotiation:error] [pid 1797] [client 127.0.0.1:41721] AH00687: Negotiation: discovered file(s) matching request: /home/evgen/www/insuarance_oop/news (None could be negotiated).
+[Thu Aug 04 08:34:38.562591 2016] [:error] [pid 1797] [client 127.0.0.1:41729] PHP Fatal error:  Class 'framework\\FrontController' not found in /home/evgen/www/insuarance_oop/index.php on line 7
+[Thu Aug 04 08:34:38.562701 2016] [:error] [pid 1797] [client 127.0.0.1:41729] PHP Stack trace:
+[Thu Aug 04 08:34:38.562716 2016] [:error] [pid 1797] [client 127.0.0.1:41729] PHP   1. {main}() /home/evgen/www/insuarance_oop/index.php:0
+[Thu Aug 04 08:34:44.415939 2016] [:error] [pid 1798] [client 127.0.0.1:41730] PHP Fatal error:  Class 'framework\\FrontController' not found in /home/evgen/www/insuarance_oop/index.php on line 7
+[Thu Aug 04 08:34:44.415998 2016] [:error] [pid 1798] [client 127.0.0.1:41730] PHP Stack trace:
+[Thu Aug 04 08:34:44.416009 2016] [:error] [pid 1798] [client 127.0.0.1:41730] PHP   1. {main}() /home/evgen/www/insuarance_oop/index.php:0
+[Thu Aug 04 08:36:10.453865 2016] [:error] [pid 1801] [client 127.0.0.1:41732] PHP Fatal error:  Class 'framework\\FrontController' not found in /home/evgen/www/insuarance_oop/index.php on line 7
+[Thu Aug 04 08:36:10.453956 2016] [:error] [pid 1801] [client 127.0.0.1:41732] PHP Stack trace:
+[Thu Aug 04 08:36:10.453971 2016] [:error] [pid 1801] [client 127.0.0.1:41732] PHP   1. {main}() /home/evgen/www/insuarance_oop/index.php:0
+[Thu Aug 04 08:36:40.701732 2016] [:error] [pid 1800] [client 127.0.0.1:41733] PHP Fatal error:  Class 'framework\\FrontController' not found in /home/evgen/www/insuarance_oop/index.php on line 7
+[Thu Aug 04 08:36:40.701807 2016] [:error] [pid 1800] [client 127.0.0.1:41733] PHP Stack trace:
+[Thu Aug 04 08:36:40.701821 2016] [:error] [pid 1800] [client 127.0.0.1:41733] PHP   1. {main}() /home/evgen/www/insuarance_oop/index.php:0
+[Thu Aug 04 08:36:52.058208 2016] [:error] [pid 1799] [client 127.0.0.1:41734] PHP Fatal error:  Class 'framework\\FrontController' not found in /home/evgen/www/insuarance_oop/index.php on line 7
+[Thu Aug 04 08:36:52.058282 2016] [:error] [pid 1799] [client 127.0.0.1:41734] PHP Stack trace:
+[Thu Aug 04 08:36:52.058296 2016] [:error] [pid 1799] [client 127.0.0.1:41734] PHP   1. {main}() /home/evgen/www/insuarance_oop/index.php:0
+[Thu Aug 04 08:38:16.317104 2016] [:error] [pid 2649] [client 127.0.0.1:41735] PHP Fatal error:  Class 'NewsController' not found in /home/evgen/www/insuarance_oop/framework/FrontController.php on line 16
+[Thu Aug 04 08:38:16.317179 2016] [:error] [pid 2649] [client 127.0.0.1:41735] PHP Stack trace:
+[Thu Aug 04 08:38:16.317193 2016] [:error] [pid 2649] [client 127.0.0.1:41735] PHP   1. {main}() /home/evgen/www/insuarance_oop/index.php:0
+[Thu Aug 04 08:38:16.317206 2016] [:error] [pid 2649] [client 127.0.0.1:41735] PHP   2. framework\\FrontController::start() /home/evgen/www/insuarance_oop/index.php:7
+[Thu Aug 04 08:38:51.290031 2016] [:error] [pid 1797] [client 127.0.0.1:41736] PHP Fatal error:  Class 'NewsController' not found in /home/evgen/www/insuarance_oop/framework/FrontController.php on line 16
+[Thu Aug 04 08:38:51.290107 2016] [:error] [pid 1797] [client 127.0.0.1:41736] PHP Stack trace:
+[Thu Aug 04 08:38:51.290121 2016] [:error] [pid 1797] [client 127.0.0.1:41736] PHP   1. {main}() /home/evgen/www/insuarance_oop/index.php:0
+[Thu Aug 04 08:38:51.290133 2016] [:error] [pid 1797] [client 127.0.0.1:41736] PHP   2. framework\\FrontController::start() /home/evgen/www/insuarance_oop/index.php:7
+[Thu Aug 04 08:39:27.037773 2016] [:error] [pid 1798] [client 127.0.0.1:41737] PHP Warning:  set_error_handler() expects the argument (handlerException) to be a valid callback in /home/evgen/www/insuarance_oop/framework/Controller.php on line 6
+[Thu Aug 04 08:39:27.037850 2016] [:error] [pid 1798] [client 127.0.0.1:41737] PHP Stack trace:
+[Thu Aug 04 08:39:27.037865 2016] [:error] [pid 1798] [client 127.0.0.1:41737] PHP   1. {main}() /home/evgen/www/insuarance_oop/index.php:0
+[Thu Aug 04 08:39:27.037891 2016] [:error] [pid 1798] [client 127.0.0.1:41737] PHP   2. framework\\FrontController::start() /home/evgen/www/insuarance_oop/index.php:7
+[Thu Aug 04 08:39:27.037902 2016] [:error] [pid 1798] [client 127.0.0.1:41737] PHP   3. spl_autoload_call() /home/evgen/www/insuarance_oop/index.php:16
+[Thu Aug 04 08:39:27.037935 2016] [:error] [pid 1798] [client 127.0.0.1:41737] PHP   4. controllersAutoload() /home/evgen/www/insuarance_oop/index.php:0
+[Thu Aug 04 08:39:27.037945 2016] [:error] [pid 1798] [client 127.0.0.1:41737] PHP   5. require_once() /home/evgen/www/insuarance_oop/config.inc:54
+[Thu Aug 04 08:39:27.037954 2016] [:error] [pid 1798] [client 127.0.0.1:41737] PHP   6. spl_autoload_call() /home/evgen/www/insuarance_oop/config.inc:9
+[Thu Aug 04 08:39:27.037963 2016] [:error] [pid 1798] [client 127.0.0.1:41737] PHP   7. frameworkAutoload() /home/evgen/www/insuarance_oop/config.inc:0
+[Thu Aug 04 08:39:27.037971 2016] [:error] [pid 1798] [client 127.0.0.1:41737] PHP   8. require_once() /home/evgen/www/insuarance_oop/config.inc:39
+[Thu Aug 04 08:39:27.037980 2016] [:error] [pid 1798] [client 127.0.0.1:41737] PHP   9. set_error_handler() /home/evgen/www/insuarance_oop/framework/Controller.php:6
+[Thu Aug 04 08:39:27.038179 2016] [:error] [pid 1798] [client 127.0.0.1:41737] PHP Fatal error:  Class 'NewsController' not found in /home/evgen/www/insuarance_oop/framework/FrontController.php on line 16
+[Thu Aug 04 08:39:27.038188 2016] [:error] [pid 1798] [client 127.0.0.1:41737] PHP Stack trace:
+[Thu Aug 04 08:39:27.038197 2016] [:error] [pid 1798] [client 127.0.0.1:41737] PHP   1. {main}() /home/evgen/www/insuarance_oop/index.php:0
+[Thu Aug 04 08:39:27.038208 2016] [:error] [pid 1798] [client 127.0.0.1:41737] PHP   2. framework\\FrontController::start() /home/evgen/www/insuarance_oop/index.php:7
+[Thu Aug 04 08:42:44.292585 2016] [:error] [pid 1801] [client 127.0.0.1:41742] PHP Warning:  set_error_handler() expects the argument (handlerException) to be a valid callback in /home/evgen/www/insuarance_oop/framework/Controller.php on line 6
+[Thu Aug 04 08:42:44.292654 2016] [:error] [pid 1801] [client 127.0.0.1:41742] PHP Stack trace:
+[Thu Aug 04 08:42:44.292665 2016] [:error] [pid 1801] [client 127.0.0.1:41742] PHP   1. {main}() /home/evgen/www/insuarance_oop/index.php:0
+[Thu Aug 04 08:42:44.292675 2016] [:error] [pid 1801] [client 127.0.0.1:41742] PHP   2. framework\\FrontController::start() /home/evgen/www/insuarance_oop/index.php:7
+[Thu Aug 04 08:42:44.292683 2016] [:error] [pid 1801] [client 127.0.0.1:41742] PHP   3. spl_autoload_call() /home/evgen/www/insuarance_oop/index.php:16
+[Thu Aug 04 08:42:44.292690 2016] [:error] [pid 1801] [client 127.0.0.1:41742] PHP   4. controllersAutoload() /home/evgen/www/insuarance_oop/index.php:0
+[Thu Aug 04 08:42:44.292698 2016] [:error] [pid 1801] [client 127.0.0.1:41742] PHP   5. require_once() /home/evgen/www/insuarance_oop/config.inc:55
+[Thu Aug 04 08:42:44.292705 2016] [:error] [pid 1801] [client 127.0.0.1:41742] PHP   6. spl_autoload_call() /home/evgen/www/insuarance_oop/config.inc:9
+[Thu Aug 04 08:42:44.292712 2016] [:error] [pid 1801] [client 127.0.0.1:41742] PHP   7. frameworkAutoload() /home/evgen/www/insuarance_oop/config.inc:0
+[Thu Aug 04 08:42:44.292719 2016] [:error] [pid 1801] [client 127.0.0.1:41742] PHP   8. require_once() /home/evgen/www/insuarance_oop/config.inc:39
+[Thu Aug 04 08:42:44.292726 2016] [:error] [pid 1801] [client 127.0.0.1:41742] PHP   9. set_error_handler() /home/evgen/www/insuarance_oop/framework/Controller.php:6
+[Thu Aug 04 08:42:44.292871 2016] [:error] [pid 1801] [client 127.0.0.1:41742] PHP Fatal error:  Class 'NewsController' not found in /home/evgen/www/insuarance_oop/framework/FrontController.php on line 16
+[Thu Aug 04 08:42:44.292880 2016] [:error] [pid 1801] [client 127.0.0.1:41742] PHP Stack trace:
+[Thu Aug 04 08:42:44.292890 2016] [:error] [pid 1801] [client 127.0.0.1:41742] PHP   1. {main}() /home/evgen/www/insuarance_oop/index.php:0
+[Thu Aug 04 08:42:44.292902 2016] [:error] [pid 1801] [client 127.0.0.1:41742] PHP   2. framework\\FrontController::start() /home/evgen/www/insuarance_oop/index.php:7
+[Thu Aug 04 08:44:16.209092 2016] [:error] [pid 1800] [client 127.0.0.1:41745] PHP Warning:  set_error_handler() expects the argument (handlerException) to be a valid callback in /home/evgen/www/insuarance_oop/framework/Controller.php on line 10
+[Thu Aug 04 08:44:16.209173 2016] [:error] [pid 1800] [client 127.0.0.1:41745] PHP Stack trace:
+[Thu Aug 04 08:44:16.209188 2016] [:error] [pid 1800] [client 127.0.0.1:41745] PHP   1. {main}() /home/evgen/www/insuarance_oop/index.php:0
+[Thu Aug 04 08:44:16.209201 2016] [:error] [pid 1800] [client 127.0.0.1:41745] PHP   2. framework\\FrontController::start() /home/evgen/www/insuarance_oop/index.php:7
+[Thu Aug 04 08:44:16.209426 2016] [:error] [pid 1800] [client 127.0.0.1:41745] PHP   3. spl_autoload_call() /home/evgen/www/insuarance_oop/index.php:16
+[Thu Aug 04 08:44:16.209438 2016] [:error] [pid 1800] [client 127.0.0.1:41745] PHP   4. controllersAutoload() /home/evgen/www/insuarance_oop/index.php:0
+[Thu Aug 04 08:44:16.209448 2016] [:error] [pid 1800] [client 127.0.0.1:41745] PHP   5. require_once() /home/evgen/www/insuarance_oop/config.inc:55
+[Thu Aug 04 08:44:16.209458 2016] [:error] [pid 1800] [client 127.0.0.1:41745] PHP   6. spl_autoload_call() /home/evgen/www/insuarance_oop/config.inc:9
+[Thu Aug 04 08:44:16.209467 2016] [:error] [pid 1800] [client 127.0.0.1:41745] PHP   7. frameworkAutoload() /home/evgen/www/insuarance_oop/config.inc:0
+[Thu Aug 04 08:44:16.209476 2016] [:error] [pid 1800] [client 127.0.0.1:41745] PHP   8. require_once() /home/evgen/www/insuarance_oop/config.inc:39
+[Thu Aug 04 08:44:16.209486 2016] [:error] [pid 1800] [client 127.0.0.1:41745] PHP   9. set_error_handler() /home/evgen/www/insuarance_oop/framework/Controller.php:10
+[Thu Aug 04 08:44:16.209689 2016] [:error] [pid 1800] [client 127.0.0.1:41745] PHP Fatal error:  Class 'NewsController' not found in /home/evgen/www/insuarance_oop/framework/FrontController.php on line 16
+[Thu Aug 04 08:44:16.209698 2016] [:error] [pid 1800] [client 127.0.0.1:41745] PHP Stack trace:
+[Thu Aug 04 08:44:16.209708 2016] [:error] [pid 1800] [client 127.0.0.1:41745] PHP   1. {main}() /home/evgen/www/insuarance_oop/index.php:0
+[Thu Aug 04 08:44:16.209720 2016] [:error] [pid 1800] [client 127.0.0.1:41745] PHP   2. framework\\FrontController::start() /home/evgen/www/insuarance_oop/index.php:7
+[Thu Aug 04 08:45:46.612595 2016] [:error] [pid 1799] [client 127.0.0.1:41746] PHP Fatal error:  Class 'NewsController' not found in /home/evgen/www/insuarance_oop/framework/FrontController.php on line 16
+[Thu Aug 04 08:45:46.612665 2016] [:error] [pid 1799] [client 127.0.0.1:41746] PHP Stack trace:
+[Thu Aug 04 08:45:46.612680 2016] [:error] [pid 1799] [client 127.0.0.1:41746] PHP   1. {main}() /home/evgen/www/insuarance_oop/index.php:0
+[Thu Aug 04 08:45:46.612692 2016] [:error] [pid 1799] [client 127.0.0.1:41746] PHP   2. framework\\FrontController::start() /home/evgen/www/insuarance_oop/index.php:7
+[Thu Aug 04 08:46:39.788952 2016] [:error] [pid 2649] [client 127.0.0.1:41748] PHP Fatal error:  Class 'NewsController' not found in /home/evgen/www/insuarance_oop/framework/FrontController.php on line 17
+[Thu Aug 04 08:46:39.789039 2016] [:error] [pid 2649] [client 127.0.0.1:41748] PHP Stack trace:
+[Thu Aug 04 08:46:39.789054 2016] [:error] [pid 2649] [client 127.0.0.1:41748] PHP   1. {main}() /home/evgen/www/insuarance_oop/index.php:0
+[Thu Aug 04 08:46:39.789067 2016] [:error] [pid 2649] [client 127.0.0.1:41748] PHP   2. framework\\FrontController::start() /home/evgen/www/insuarance_oop/index.php:7
+[Thu Aug 04 08:48:13.959451 2016] [:error] [pid 1797] [client 127.0.0.1:41749] PHP Fatal error:  Class 'NewsController' not found in /home/evgen/www/insuarance_oop/framework/FrontController.php on line 19
+[Thu Aug 04 08:48:13.959516 2016] [:error] [pid 1797] [client 127.0.0.1:41749] PHP Stack trace:
+[Thu Aug 04 08:48:13.959529 2016] [:error] [pid 1797] [client 127.0.0.1:41749] PHP   1. {main}() /home/evgen/www/insuarance_oop/index.php:0
+[Thu Aug 04 08:48:13.959558 2016] [:error] [pid 1797] [client 127.0.0.1:41749] PHP   2. framework\\FrontController::start() /home/evgen/www/insuarance_oop/index.php:7
+[Thu Aug 04 08:48:27.026660 2016] [:error] [pid 1798] [client 127.0.0.1:41751] PHP Fatal error:  Class 'NewsController' not found in /home/evgen/www/insuarance_oop/framework/FrontController.php on line 20
+[Thu Aug 04 08:48:27.026718 2016] [:error] [pid 1798] [client 127.0.0.1:41751] PHP Stack trace:
+[Thu Aug 04 08:48:27.026729 2016] [:error] [pid 1798] [client 127.0.0.1:41751] PHP   1. {main}() /home/evgen/www/insuarance_oop/index.php:0
+[Thu Aug 04 08:48:27.026739 2016] [:error] [pid 1798] [client 127.0.0.1:41751] PHP   2. framework\\FrontController::start() /home/evgen/www/insuarance_oop/index.php:7
+[Thu Aug 04 08:48:39.978935 2016] [:error] [pid 1801] [client 127.0.0.1:41752] PHP Fatal error:  Class 'NewsController' not found in /home/evgen/www/insuarance_oop/framework/FrontController.php on line 21
+[Thu Aug 04 08:48:39.978997 2016] [:error] [pid 1801] [client 127.0.0.1:41752] PHP Stack trace:
+[Thu Aug 04 08:48:39.979012 2016] [:error] [pid 1801] [client 127.0.0.1:41752] PHP   1. {main}() /home/evgen/www/insuarance_oop/index.php:0
+[Thu Aug 04 08:48:39.979025 2016] [:error] [pid 1801] [client 127.0.0.1:41752] PHP   2. framework\\FrontController::start() /home/evgen/www/insuarance_oop/index.php:7
+[Thu Aug 04 08:49:52.751694 2016] [:error] [pid 1800] [client 127.0.0.1:41753] PHP Warning:  require_once(../app/controllers/NewsController.php): failed to open stream: No such file or directory in /home/evgen/www/insuarance_oop/framework/FrontController.php on line 3
+[Thu Aug 04 08:49:52.751768 2016] [:error] [pid 1800] [client 127.0.0.1:41753] PHP Stack trace:
+[Thu Aug 04 08:49:52.751783 2016] [:error] [pid 1800] [client 127.0.0.1:41753] PHP   1. {main}() /home/evgen/www/insuarance_oop/index.php:0
+[Thu Aug 04 08:49:52.751794 2016] [:error] [pid 1800] [client 127.0.0.1:41753] PHP   2. spl_autoload_call() /home/evgen/www/insuarance_oop/index.php:7
+[Thu Aug 04 08:49:52.751805 2016] [:error] [pid 1800] [client 127.0.0.1:41753] PHP   3. frameworkAutoload() /home/evgen/www/insuarance_oop/index.php:0
+[Thu Aug 04 08:49:52.751815 2016] [:error] [pid 1800] [client 127.0.0.1:41753] PHP   4. require_once() /home/evgen/www/insuarance_oop/config.inc:39
+[Thu Aug 04 08:49:52.751966 2016] [:error] [pid 1800] [client 127.0.0.1:41753] PHP Fatal error:  require_once(): Failed opening required '../app/controllers/NewsController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/evgen/www/insuarance_oop/framework/FrontController.php on line 3
+[Thu Aug 04 08:49:52.751982 2016] [:error] [pid 1800] [client 127.0.0.1:41753] PHP Stack trace:
+[Thu Aug 04 08:49:52.751992 2016] [:error] [pid 1800] [client 127.0.0.1:41753] PHP   1. {main}() /home/evgen/www/insuarance_oop/index.php:0
+[Thu Aug 04 08:49:52.752002 2016] [:error] [pid 1800] [client 127.0.0.1:41753] PHP   2. spl_autoload_call() /home/evgen/www/insuarance_oop/index.php:7
+[Thu Aug 04 08:49:52.752012 2016] [:error] [pid 1800] [client 127.0.0.1:41753] PHP   3. frameworkAutoload() /home/evgen/www/insuarance_oop/index.php:0
+[Thu Aug 04 08:49:52.752021 2016] [:error] [pid 1800] [client 127.0.0.1:41753] PHP   4. require_once() /home/evgen/www/insuarance_oop/config.inc:39
+[Thu Aug 04 08:51:21.698089 2016] [:error] [pid 1799] [client 127.0.0.1:41754] PHP Fatal error:  Class 'NewsController' not found in /home/evgen/www/insuarance_oop/framework/FrontController.php on line 23
+[Thu Aug 04 08:51:21.698156 2016] [:error] [pid 1799] [client 127.0.0.1:41754] PHP Stack trace:
+[Thu Aug 04 08:51:21.698170 2016] [:error] [pid 1799] [client 127.0.0.1:41754] PHP   1. {main}() /home/evgen/www/insuarance_oop/index.php:0
+[Thu Aug 04 08:51:21.698184 2016] [:error] [pid 1799] [client 127.0.0.1:41754] PHP   2. framework\\FrontController::start() /home/evgen/www/insuarance_oop/index.php:7

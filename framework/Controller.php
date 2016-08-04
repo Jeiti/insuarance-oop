@@ -1,9 +1,13 @@
 <?php
 namespace framework;
-function handlerException($num, $message, $file, $line){
-    throw new InsuaranceException($message, $num, $file, $line);
-}
-set_error_handler('handlerException',ERROR_LEVEL);
+use main\InsuaranceException;
+use main\WebApplication;
+use main\SqlException;
+
+//function handlerException($num, $message, $file, $line){
+//    throw new InsuaranceException($message, $num, $file, $line);
+//}
+//set_error_handler('handlerException',ERROR_LEVEL);
 
 abstract class Controller
 {

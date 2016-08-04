@@ -1,4 +1,5 @@
 <?php
+
 define("DBHOSTNAME", "localhost");
 define("DBUSER", "root");
 define("DBPASSWORD", "123");
@@ -21,23 +22,45 @@ else{
     require_once ($_classname . ".php");
 }*/
 
-function frameworkAutoload($className)
+/*function frameworkAutoload($className)
 {
-    $fileName = $_SERVER['DOCUMENT_ROOT']."/framework/$className.php";
+    $fileName = $_SERVER['DOCUMENT_ROOT']."/$className.php";
+    echo($fileName);
     if (file_exists($fileName)) {
         require_once ($fileName);
     }
 }
-spl_autoload_register('frameworkAutoload');
+spl_autoload_register('frameworkAutoload');*/
+
+function frameworkAutoload($classname){
+    $classname = str_replace("\\","/",$classname);
+    $filename = "$classname.php";
+    if(file_exists($filename)){
+        require_once ($filename);
+    }
+}
+spl_autoload_register("frameworkAutoload");
+
+
+
+
+
 
 function controllersAutoload($className)
 {
-    $fileName = $_SERVER['DOCUMENT_ROOT']."./app/controllers/$className.php";
+    $fileName = $_SERVER['DOCUMENT_ROOT']."/app/controllers/$className.php";
+
     if (file_exists($fileName)) {
+        echo $fileName;
         require_once ($fileName);
     }
 }
 spl_autoload_register('controllersAutoload');
+
+
+
+
+
 
 function modelsAutoload($className)
 {
