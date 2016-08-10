@@ -2134,3 +2134,7 @@
 127.0.0.1 - - [04/Aug/2016:08:48:39 +0300] "GET /news/new HTTP/1.1" 200 803 "-" "Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0"
 127.0.0.1 - - [04/Aug/2016:08:49:52 +0300] "GET /news/new HTTP/1.1" 200 1018 "-" "Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0"
 127.0.0.1 - - [04/Aug/2016:08:51:21 +0300] "GET /news/new HTTP/1.1" 200 800 "-" "Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0"
+127.0.0.1 - - [10/Aug/2016:08:55:37 +0300] "GET /news.php/new HTTP/1.1" 200 795 "-" "Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:48.0) Gecko/20100101 Firefox/48.0"
+127.0.0.1 - - [10/Aug/2016:08:55:40 +0300] "GET /favicon.ico HTTP/1.1" 200 844 "-" "Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:48.0) Gecko/20100101 Firefox/48.0"
+127.0.0.1 - - [10/Aug/2016:08:55:40 +0300] "GET /favicon.ico HTTP/1.1" 200 844 "-" "Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:48.0) Gecko/20100101 Firefox/48.0"
+127.0.0.1 - - [10/Aug/2016:08:55:56 +0300] "GET /news/new HTTP/1.1" 200 800 "-" "Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:48.0) Gecko/20100101 Firefox/48.0"

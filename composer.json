@@ -6,3 +6,8 @@
     "php-activerecord/php-activerecord": ">=1.1"
   }
 }
+
+//TODO: Установили смарти и phpActiveRecord при помощи композера
+//TODO: почитать про смарти и phpActiveRecord и композер
+
+//Композер позволяет скачивать пакеты для php - создает папку vendor

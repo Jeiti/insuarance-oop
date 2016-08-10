@@ -16,5 +16,3 @@ switch ($action){
         $controller->actionCreate();
         break;
 }
-
-//TODO: Напомнить про фронт-контроллер

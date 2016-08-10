@@ -507,3 +507,27 @@
 [Thu Aug 04 08:51:21.698156 2016] [:error] [pid 1799] [client 127.0.0.1:41754] PHP Stack trace:
 [Thu Aug 04 08:51:21.698170 2016] [:error] [pid 1799] [client 127.0.0.1:41754] PHP   1. {main}() /home/evgen/www/insuarance_oop/index.php:0
 [Thu Aug 04 08:51:21.698184 2016] [:error] [pid 1799] [client 127.0.0.1:41754] PHP   2. framework\\FrontController::start() /home/evgen/www/insuarance_oop/index.php:7
+[Wed Aug 10 08:55:38.026875 2016] [:error] [pid 2062] [client 127.0.0.1:45063] PHP Fatal error:  Class 'News.phpController' not found in /home/evgen/www/insuarance_oop/framework/FrontController.php on line 23
+[Wed Aug 10 08:55:38.046767 2016] [:error] [pid 2062] [client 127.0.0.1:45063] PHP Stack trace:
+[Wed Aug 10 08:55:38.046809 2016] [:error] [pid 2062] [client 127.0.0.1:45063] PHP   1. {main}() /home/evgen/www/insuarance_oop/index.php:0
+[Wed Aug 10 08:55:38.046823 2016] [:error] [pid 2062] [client 127.0.0.1:45063] PHP   2. framework\\FrontController::start() /home/evgen/www/insuarance_oop/index.php:7
+[Wed Aug 10 08:55:40.110361 2016] [:error] [pid 2062] [client 127.0.0.1:45063] PHP Notice:  Undefined variable: actionName in /home/evgen/www/insuarance_oop/framework/FrontController.php on line 14
+[Wed Aug 10 08:55:40.110426 2016] [:error] [pid 2062] [client 127.0.0.1:45063] PHP Stack trace:
+[Wed Aug 10 08:55:40.110439 2016] [:error] [pid 2062] [client 127.0.0.1:45063] PHP   1. {main}() /home/evgen/www/insuarance_oop/index.php:0
+[Wed Aug 10 08:55:40.110451 2016] [:error] [pid 2062] [client 127.0.0.1:45063] PHP   2. framework\\FrontController::start() /home/evgen/www/insuarance_oop/index.php:7
+[Wed Aug 10 08:55:40.110513 2016] [:error] [pid 2062] [client 127.0.0.1:45063] PHP Fatal error:  Class 'Favicon.icoController' not found in /home/evgen/www/insuarance_oop/framework/FrontController.php on line 23
+[Wed Aug 10 08:55:40.110521 2016] [:error] [pid 2062] [client 127.0.0.1:45063] PHP Stack trace:
+[Wed Aug 10 08:55:40.110529 2016] [:error] [pid 2062] [client 127.0.0.1:45063] PHP   1. {main}() /home/evgen/www/insuarance_oop/index.php:0
+[Wed Aug 10 08:55:40.110540 2016] [:error] [pid 2062] [client 127.0.0.1:45063] PHP   2. framework\\FrontController::start() /home/evgen/www/insuarance_oop/index.php:7
+[Wed Aug 10 08:55:40.615583 2016] [:error] [pid 2062] [client 127.0.0.1:45063] PHP Notice:  Undefined variable: actionName in /home/evgen/www/insuarance_oop/framework/FrontController.php on line 14
+[Wed Aug 10 08:55:40.615625 2016] [:error] [pid 2062] [client 127.0.0.1:45063] PHP Stack trace:
+[Wed Aug 10 08:55:40.615638 2016] [:error] [pid 2062] [client 127.0.0.1:45063] PHP   1. {main}() /home/evgen/www/insuarance_oop/index.php:0
+[Wed Aug 10 08:55:40.615651 2016] [:error] [pid 2062] [client 127.0.0.1:45063] PHP   2. framework\\FrontController::start() /home/evgen/www/insuarance_oop/index.php:7
+[Wed Aug 10 08:55:40.615715 2016] [:error] [pid 2062] [client 127.0.0.1:45063] PHP Fatal error:  Class 'Favicon.icoController' not found in /home/evgen/www/insuarance_oop/framework/FrontController.php on line 23
+[Wed Aug 10 08:55:40.615723 2016] [:error] [pid 2062] [client 127.0.0.1:45063] PHP Stack trace:
+[Wed Aug 10 08:55:40.615732 2016] [:error] [pid 2062] [client 127.0.0.1:45063] PHP   1. {main}() /home/evgen/www/insuarance_oop/index.php:0
+[Wed Aug 10 08:55:40.615743 2016] [:error] [pid 2062] [client 127.0.0.1:45063] PHP   2. framework\\FrontController::start() /home/evgen/www/insuarance_oop/index.php:7
+[Wed Aug 10 08:55:56.542901 2016] [:error] [pid 2063] [client 127.0.0.1:45065] PHP Fatal error:  Class 'NewsController' not found in /home/evgen/www/insuarance_oop/framework/FrontController.php on line 23
+[Wed Aug 10 08:55:56.542994 2016] [:error] [pid 2063] [client 127.0.0.1:45065] PHP Stack trace:
+[Wed Aug 10 08:55:56.543008 2016] [:error] [pid 2063] [client 127.0.0.1:45065] PHP   1. {main}() /home/evgen/www/insuarance_oop/index.php:0
+[Wed Aug 10 08:55:56.543020 2016] [:error] [pid 2063] [client 127.0.0.1:45065] PHP   2. framework\\FrontController::start() /home/evgen/www/insuarance_oop/index.php:7
