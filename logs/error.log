@@ -531,3 +531,31 @@
 [Wed Aug 10 08:55:56.542994 2016] [:error] [pid 2063] [client 127.0.0.1:45065] PHP Stack trace:
 [Wed Aug 10 08:55:56.543008 2016] [:error] [pid 2063] [client 127.0.0.1:45065] PHP   1. {main}() /home/evgen/www/insuarance_oop/index.php:0
 [Wed Aug 10 08:55:56.543020 2016] [:error] [pid 2063] [client 127.0.0.1:45065] PHP   2. framework\\FrontController::start() /home/evgen/www/insuarance_oop/index.php:7
+[Wed Aug 10 09:19:37.464665 2016] [:error] [pid 8865] [client 127.0.0.1:45248] PHP Fatal error:  Class 'ActiveRecord\\Config' not found in /home/evgen/www/insuarance_oop/test.php on line 2
+[Wed Aug 10 09:19:37.464723 2016] [:error] [pid 8865] [client 127.0.0.1:45248] PHP Stack trace:
+[Wed Aug 10 09:19:37.464738 2016] [:error] [pid 8865] [client 127.0.0.1:45248] PHP   1. {main}() /home/evgen/www/insuarance_oop/test.php:0
+[Wed Aug 10 09:19:38.911452 2016] [:error] [pid 8867] [client 127.0.0.1:45249] PHP Notice:  Undefined variable: actionName in /home/evgen/www/insuarance_oop/framework/FrontController.php on line 14
+[Wed Aug 10 09:19:38.911547 2016] [:error] [pid 8867] [client 127.0.0.1:45249] PHP Stack trace:
+[Wed Aug 10 09:19:38.911561 2016] [:error] [pid 8867] [client 127.0.0.1:45249] PHP   1. {main}() /home/evgen/www/insuarance_oop/index.php:0
+[Wed Aug 10 09:19:38.911574 2016] [:error] [pid 8867] [client 127.0.0.1:45249] PHP   2. framework\\FrontController::start() /home/evgen/www/insuarance_oop/index.php:7
+[Wed Aug 10 09:19:38.911637 2016] [:error] [pid 8867] [client 127.0.0.1:45249] PHP Fatal error:  Class 'Favicon.icoController' not found in /home/evgen/www/insuarance_oop/framework/FrontController.php on line 23
+[Wed Aug 10 09:19:38.911645 2016] [:error] [pid 8867] [client 127.0.0.1:45249] PHP Stack trace:
+[Wed Aug 10 09:19:38.911654 2016] [:error] [pid 8867] [client 127.0.0.1:45249] PHP   1. {main}() /home/evgen/www/insuarance_oop/index.php:0
+[Wed Aug 10 09:19:38.911666 2016] [:error] [pid 8867] [client 127.0.0.1:45249] PHP   2. framework\\FrontController::start() /home/evgen/www/insuarance_oop/index.php:7
+[Wed Aug 10 09:19:39.294811 2016] [:error] [pid 8867] [client 127.0.0.1:45249] PHP Notice:  Undefined variable: actionName in /home/evgen/www/insuarance_oop/framework/FrontController.php on line 14
+[Wed Aug 10 09:19:39.294874 2016] [:error] [pid 8867] [client 127.0.0.1:45249] PHP Stack trace:
+[Wed Aug 10 09:19:39.294887 2016] [:error] [pid 8867] [client 127.0.0.1:45249] PHP   1. {main}() /home/evgen/www/insuarance_oop/index.php:0
+[Wed Aug 10 09:19:39.294900 2016] [:error] [pid 8867] [client 127.0.0.1:45249] PHP   2. framework\\FrontController::start() /home/evgen/www/insuarance_oop/index.php:7
+[Wed Aug 10 09:19:39.294962 2016] [:error] [pid 8867] [client 127.0.0.1:45249] PHP Fatal error:  Class 'Favicon.icoController' not found in /home/evgen/www/insuarance_oop/framework/FrontController.php on line 23
+[Wed Aug 10 09:19:39.294970 2016] [:error] [pid 8867] [client 127.0.0.1:45249] PHP Stack trace:
+[Wed Aug 10 09:19:39.294980 2016] [:error] [pid 8867] [client 127.0.0.1:45249] PHP   1. {main}() /home/evgen/www/insuarance_oop/index.php:0
+[Wed Aug 10 09:19:39.294991 2016] [:error] [pid 8867] [client 127.0.0.1:45249] PHP   2. framework\\FrontController::start() /home/evgen/www/insuarance_oop/index.php:7
+[Wed Aug 10 09:23:06.321551 2016] [:error] [pid 2064] [client 127.0.0.1:45260] PHP Fatal error:  Class 'ActiveRecord\\Config' not found in /home/evgen/www/insuarance_oop/test.php on line 2
+[Wed Aug 10 09:23:06.321628 2016] [:error] [pid 2064] [client 127.0.0.1:45260] PHP Stack trace:
+[Wed Aug 10 09:23:06.321643 2016] [:error] [pid 2064] [client 127.0.0.1:45260] PHP   1. {main}() /home/evgen/www/insuarance_oop/test.php:0
+[Wed Aug 10 09:23:22.071946 2016] [:error] [pid 8866] [client 127.0.0.1:45261] PHP Fatal error:  Class 'ActiveRecord\\Config' not found in /home/evgen/www/insuarance_oop/test.php on line 2
+[Wed Aug 10 09:23:22.072037 2016] [:error] [pid 8866] [client 127.0.0.1:45261] PHP Stack trace:
+[Wed Aug 10 09:23:22.072056 2016] [:error] [pid 8866] [client 127.0.0.1:45261] PHP   1. {main}() /home/evgen/www/insuarance_oop/test.php:0
+[Wed Aug 10 09:24:22.105053 2016] [:error] [pid 8865] [client 127.0.0.1:45263] PHP Fatal error:  Class 'ActiveRecord\\Config' not found in /home/evgen/www/insuarance_oop/test.php on line 8
+[Wed Aug 10 09:24:22.105120 2016] [:error] [pid 8865] [client 127.0.0.1:45263] PHP Stack trace:
+[Wed Aug 10 09:24:22.105135 2016] [:error] [pid 8865] [client 127.0.0.1:45263] PHP   1. {main}() /home/evgen/www/insuarance_oop/test.php:0
